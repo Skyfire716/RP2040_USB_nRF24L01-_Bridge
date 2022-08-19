@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchl\u00e4ger/RP2040_USB_nRF24L01-_Bridge/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild"
+		},
+		{
+			"file" : "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchl\u00e4ger/RP2040_USB_nRF24L01-_Bridge/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.rule"
+		},
+		{
+			"file" : "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchl\u00e4ger/RP2040_USB_nRF24L01-_Bridge/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild-complete.rule"
+		},
+		{
+			"file" : "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchl\u00e4ger/RP2040_USB_nRF24L01-_Bridge/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule"
+		},
+		{
+			"file" : "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchl\u00e4ger/RP2040_USB_nRF24L01-_Bridge/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule"
+		},
+		{
+			"file" : "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchl\u00e4ger/RP2040_USB_nRF24L01-_Bridge/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule"
+		},
+		{
+			"file" : "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchl\u00e4ger/RP2040_USB_nRF24L01-_Bridge/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule"
+		},
+		{
+			"file" : "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchl\u00e4ger/RP2040_USB_nRF24L01-_Bridge/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule"
+		},
+		{
+			"file" : "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchl\u00e4ger/RP2040_USB_nRF24L01-_Bridge/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule"
+		},
+		{
+			"file" : "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchl\u00e4ger/RP2040_USB_nRF24L01-_Bridge/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"PioasmBuild"
+		],
+		"name" : "PioasmBuild"
+	}
+}

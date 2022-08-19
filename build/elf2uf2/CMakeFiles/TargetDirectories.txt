@@ -1,0 +1,5 @@
+/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2/CMakeFiles/elf2uf2.dir
+/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2/CMakeFiles/edit_cache.dir
+/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2/CMakeFiles/rebuild_cache.dir
+/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
+/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir
