@@ -6,4 +6,5 @@
 #define CSN_PIN 17
 #define IRQ_PIN 6
 
+
 #endif // DEFAULTPINS_H

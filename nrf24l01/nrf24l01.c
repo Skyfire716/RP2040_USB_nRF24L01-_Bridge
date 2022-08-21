@@ -33,8 +33,73 @@
 
 #define LED_PIN PICO_DEFAULT_LED_PIN
 
-bool radio_begin();
+bool radio_begin(); 
+bool radio_begini(uint16_t _cepin, uint16_t _cspin);
 bool radio_isChipConnected();
+void radio_startListening(void);
+void radio_stopListening(void);
+bool radio_available(void);
+void radio_read(void *buf, uint8_t len);
+bool radio_write(const void *buf, uint8_t len);
+void radio_openWritingPipe(const uint8_t *address);
+void radio_openReadingPipe(uint8_t number, const uint8_t *address);
+bool radio_failureDetected();
+void radio_printDetails (void);
+void radio_printPrettyDetails (void);
+void radio_encodeRadioDetails (uint8_t *encoded_status);
+bool radio_availablePN(uint8_t *pipe_num);
+bool radio_rxFifoFull ();
+uint8_t radio_isFifo (bool about_tx);
+bool radio_isFifoE(bool about_tx, bool check_empty);
+void radio_powerDown (void);
+void radio_powerUp (void);
+bool radio_writeMC(const void *buf, uint8_t len, const bool multicast);
+bool radio_writeFast (const void *buf, uint8_t len);
+bool radio_writeFastMC(const void *buf, uint8_t len, const bool multicast);
+bool radio_writeBlocking (const void *buf, uint8_t len, uint32_t timeout);
+bool radio_txStandBy ();
+bool radio_txStandByT(uint32_t timeout);
+bool radio_writeAckPayload (uint8_t pipe, const void *buf, uint8_t len);
+void radio_whatHappened(bool tx_ok, bool tx_fail, bool rx_ready);
+void radio_startFastWrite (const void *buf, uint8_t len, const bool multicast);
+bool radio_startWrite (const void *buf, uint8_t len, const bool multicast);
+void radio_reUseTX ();
+uint8_t radio_flush_tx (void);
+uint8_t radio_flush_rx (void);
+bool radio_testCarrier (void);
+bool radio_testRPD (void);
+bool radio_isValid ();
+void radio_closeReadingPipe (uint8_t pipe);
+uint32_t radio_txDelay();
+uint32_t radio_csDelay();
+void radio_setAddressWidth (uint8_t a_width);
+void radio_setRetries (uint8_t delay, uint8_t count);
+void radio_setChannel (uint8_t channel);
+uint8_t radio_getChannel (void);
+void radio_setPayloadSize (uint8_t size);
+uint8_t radio_getPayloadSize (void);
+uint8_t radio_getDynamicPayloadSize (void);
+void radio_enableAckPayload (void);
+void radio_disableAckPayload (void);
+void radio_enableDynamicPayloads (void);
+void radio_disableDynamicPayloads (void);
+void radio_enableDynamicAck ();
+bool radio_isPVariant (void);
+void radio_setAutoAck (bool enable);
+void radio_setAutoAckP(uint8_t pipe, bool enable);
+void radio_setPALevel (uint8_t level);
+uint8_t radio_getPALevel (void);
+uint8_t radio_getARC (void);
+bool radio_setDataRate (rf24_datarate_ec speed);
+rf24_datarate_ec radio_getDataRate (void);
+void radio_setCRCLength (rf24_crclength_ec length);
+rf24_crclength_ec radio_getCRCLength (void);
+void radio_disableCRC (void);
+void radio_maskIRQ (bool tx_ok, bool tx_fail, bool rx_ready);
+void radio_startConstCarrier (rf24_pa_dbm_ec level, uint8_t channel);
+void radio_stopConstCarrier (void);
+void radio_toggleAllPipes (bool isEnabled);
+void radio_setRadiation (uint8_t level, rf24_datarate_ec speed);
 
 
 // Function prototypes for our device specific endpoint handlers defined
