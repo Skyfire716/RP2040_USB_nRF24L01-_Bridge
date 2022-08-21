@@ -1,7 +1,18 @@
+/**
+ * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
 #include <stdio.h>
+
+// Pico
 #include "pico/stdlib.h"
-#include "pico/binary_info.h"
-#include <string>
+
+// For memcpy
+#include <string.h>
+
+// Include descriptor struct definitions
 #include "usb_common.h"
 // USB register definitions from pico-sdk
 #include "hardware/regs/usb.h"
@@ -13,17 +24,16 @@
 #include "hardware/resets.h"
 
 // Device descriptors
-#include "dev_lowlevel.h"
+#include "nrf24l01.h"
 
-#include <RF24.h>
+//#include <RF24.h>
+
 
 #define usb_hw_set hw_set_alias(usb_hw)
 #define usb_hw_clear hw_clear_alias(usb_hw)
 
-#define CE_PIN 20
-#define CSN_PIN 17
 
-//RF24 radio(CE_PIN, CSN_PIN);
+#define LED_PIN PICO_DEFAULT_LED_PIN
 
 
 // Function prototypes for our device specific endpoint handlers defined
@@ -37,6 +47,8 @@ void ep2_in_handler(uint8_t *buf, uint16_t len);
 static bool should_set_address = false;
 static uint8_t dev_addr = 0;
 static volatile bool configured = false;
+
+static volatile int blinkCounter = 0;
 
 // Global data buffer for EP0
 static uint8_t ep0_buf[64];
@@ -545,6 +557,7 @@ void ep0_out_handler(uint8_t *buf, uint16_t len) {
 void ep1_out_handler(uint8_t *buf, uint16_t len) {
     printf("RX %d bytes from host\n", len);
     // Send data back to host
+    blinkCounter = buf[0];
     struct usb_endpoint_configuration *ep = usb_get_endpoint_configuration(EP2_IN_ADDR);
     usb_start_transfer(ep, buf, len);
 }
@@ -555,57 +568,33 @@ void ep2_in_handler(uint8_t *buf, uint16_t len) {
     usb_start_transfer(usb_get_endpoint_configuration(EP1_OUT_ADDR), NULL, 64);
 }
 
-
-int main() {
-    // Enable UART so we can print
+int main(void) {
     stdio_init_all();
-    //const uint LED_PIN = PICO_DEFAULT_LED_PIN;
-    //gpio_init(LED_PIN);
-    //gpio_set_dir(LED_PIN, GPIO_OUT);
-    //gpio_init(CE_PIN);
-    //gpio_set_dir(CE_PIN, GPIO_OUT);
-
-    //printf("SPI master example\n");
-
-    // Enable SPI 0 at 1 MHz and connect to GPIOs
-    //spi_init(spi_default, 1000 * 1000);
-    //gpio_set_function(PICO_DEFAULT_SPI_RX_PIN, GPIO_FUNC_SPI);
-    //gpio_set_function(PICO_DEFAULT_SPI_SCK_PIN, GPIO_FUNC_SPI);
-    //gpio_set_function(PICO_DEFAULT_SPI_TX_PIN, GPIO_FUNC_SPI);
-    //gpio_set_function(PICO_DEFAULT_SPI_CSN_PIN, GPIO_FUNC_SPI);
-    // Make the SPI pins available to picotool
-    //bi_decl(bi_4pins_with_func(PICO_DEFAULT_SPI_RX_PIN, PICO_DEFAULT_SPI_TX_PIN, PICO_DEFAULT_SPI_SCK_PIN, PICO_DEFAULT_SPI_CSN_PIN, GPIO_FUNC_SPI));
-    //
-    
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+    printf("USB Device Low-Level hardware example\n");
     usb_device_init();
-    //gpio_put(LED_PIN, 1);
-    //sleep_ms(250);
+    
     // Wait until configured
     while (!configured) {
         tight_loop_contents();
     }
-    //gpio_put(LED_PIN, 0);
-    //sleep_ms(250);
 
-    //uint8_t data[64];
     // Get ready to rx from host
     usb_start_transfer(usb_get_endpoint_configuration(EP1_OUT_ADDR), NULL, 64);
-    /*if(data[1] == 'b'){
-        for(int i = 0; i < data[0]; i++){
-            gpio_put(LED_PIN, 1);
-            sleep_ms(250);
-            gpio_put(LED_PIN, 0);
-            sleep_ms(250);
-        }
-    }
-    */
     // Everything is interrupt driven so just loop here
     while (1) {
         tight_loop_contents();
+        if(blinkCounter != 0){
+            for(int i = 0; i < blinkCounter; i++){
+                gpio_put(LED_PIN, 1);
+                sleep_ms(250);
+                gpio_put(LED_PIN, 0);
+                sleep_ms(250);
+            }
+            blinkCounter = 0;
+        }
     }
-    
-    //if(!radio.begin(&spi)){
-    //    printf("Radio Hardware is not responding!\n");
-    //}
+
     return 0;
 }

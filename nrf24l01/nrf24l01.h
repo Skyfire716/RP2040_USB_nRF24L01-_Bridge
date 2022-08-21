@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-#ifndef DEV_LOWLEVEL_H_
-#define DEV_LOWLEVEL_H_
+#ifndef NRF24L01_H_
+#define NRF24L01_H_
 
 #include "usb_common.h"
 

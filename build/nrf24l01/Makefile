@@ -1058,78 +1058,6 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.s:
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.s
 
-__/lib/RF24/RF24.obj: __/lib/RF24/RF24.cpp.obj
-.PHONY : __/lib/RF24/RF24.obj
-
-# target to build an object file
-__/lib/RF24/RF24.cpp.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj
-.PHONY : __/lib/RF24/RF24.cpp.obj
-
-__/lib/RF24/RF24.i: __/lib/RF24/RF24.cpp.i
-.PHONY : __/lib/RF24/RF24.i
-
-# target to preprocess a source file
-__/lib/RF24/RF24.cpp.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.i
-.PHONY : __/lib/RF24/RF24.cpp.i
-
-__/lib/RF24/RF24.s: __/lib/RF24/RF24.cpp.s
-.PHONY : __/lib/RF24/RF24.s
-
-# target to generate assembly for a file
-__/lib/RF24/RF24.cpp.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.s
-.PHONY : __/lib/RF24/RF24.cpp.s
-
-__/lib/RF24/utility/rp2/gpio.obj: __/lib/RF24/utility/rp2/gpio.cpp.obj
-.PHONY : __/lib/RF24/utility/rp2/gpio.obj
-
-# target to build an object file
-__/lib/RF24/utility/rp2/gpio.cpp.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj
-.PHONY : __/lib/RF24/utility/rp2/gpio.cpp.obj
-
-__/lib/RF24/utility/rp2/gpio.i: __/lib/RF24/utility/rp2/gpio.cpp.i
-.PHONY : __/lib/RF24/utility/rp2/gpio.i
-
-# target to preprocess a source file
-__/lib/RF24/utility/rp2/gpio.cpp.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.i
-.PHONY : __/lib/RF24/utility/rp2/gpio.cpp.i
-
-__/lib/RF24/utility/rp2/gpio.s: __/lib/RF24/utility/rp2/gpio.cpp.s
-.PHONY : __/lib/RF24/utility/rp2/gpio.s
-
-# target to generate assembly for a file
-__/lib/RF24/utility/rp2/gpio.cpp.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.s
-.PHONY : __/lib/RF24/utility/rp2/gpio.cpp.s
-
-__/lib/RF24/utility/rp2/spi.obj: __/lib/RF24/utility/rp2/spi.cpp.obj
-.PHONY : __/lib/RF24/utility/rp2/spi.obj
-
-# target to build an object file
-__/lib/RF24/utility/rp2/spi.cpp.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj
-.PHONY : __/lib/RF24/utility/rp2/spi.cpp.obj
-
-__/lib/RF24/utility/rp2/spi.i: __/lib/RF24/utility/rp2/spi.cpp.i
-.PHONY : __/lib/RF24/utility/rp2/spi.i
-
-# target to preprocess a source file
-__/lib/RF24/utility/rp2/spi.cpp.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.i
-.PHONY : __/lib/RF24/utility/rp2/spi.cpp.i
-
-__/lib/RF24/utility/rp2/spi.s: __/lib/RF24/utility/rp2/spi.cpp.s
-.PHONY : __/lib/RF24/utility/rp2/spi.s
-
-# target to generate assembly for a file
-__/lib/RF24/utility/rp2/spi.cpp.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.s
-.PHONY : __/lib/RF24/utility/rp2/spi.cpp.s
-
 nrf24l01.obj: nrf24l01.cpp.obj
 .PHONY : nrf24l01.obj
 
@@ -1279,15 +1207,6 @@ help:
 	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.s"
-	@echo "... __/lib/RF24/RF24.obj"
-	@echo "... __/lib/RF24/RF24.i"
-	@echo "... __/lib/RF24/RF24.s"
-	@echo "... __/lib/RF24/utility/rp2/gpio.obj"
-	@echo "... __/lib/RF24/utility/rp2/gpio.i"
-	@echo "... __/lib/RF24/utility/rp2/gpio.s"
-	@echo "... __/lib/RF24/utility/rp2/spi.obj"
-	@echo "... __/lib/RF24/utility/rp2/spi.i"
-	@echo "... __/lib/RF24/utility/rp2/spi.s"
 	@echo "... nrf24l01.obj"
 	@echo "... nrf24l01.i"
 	@echo "... nrf24l01.s"
