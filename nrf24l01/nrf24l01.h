@@ -41,6 +41,8 @@ struct usb_device_configuration {
 #define EP1_OUT_ADDR (USB_DIR_OUT | 1)
 #define EP2_IN_ADDR  (USB_DIR_IN  | 2)
 
+#define MAXPACKETSIZE 64
+
 // EP0 IN and OUT
 static const struct usb_endpoint_descriptor ep0_out = {
         .bLength          = sizeof(struct usb_endpoint_descriptor),
@@ -95,7 +97,7 @@ static const struct usb_endpoint_descriptor ep1_out = {
         .bDescriptorType  = USB_DT_ENDPOINT,
         .bEndpointAddress = EP1_OUT_ADDR, // EP number 1, OUT from host (rx to device)
         .bmAttributes     = USB_TRANSFER_TYPE_BULK,
-        .wMaxPacketSize   = 64,
+        .wMaxPacketSize   = MAXPACKETSIZE,
         .bInterval        = 0
 };
 
@@ -104,7 +106,7 @@ static const struct usb_endpoint_descriptor ep2_in = {
         .bDescriptorType  = USB_DT_ENDPOINT,
         .bEndpointAddress = EP2_IN_ADDR, // EP number 2, IN from host (tx from device)
         .bmAttributes     = USB_TRANSFER_TYPE_BULK,
-        .wMaxPacketSize   = 64,
+        .wMaxPacketSize   = MAXPACKETSIZE,
         .bInterval        = 0
 };
 
@@ -119,7 +121,7 @@ static const struct usb_configuration_descriptor config_descriptor = {
         .bConfigurationValue = 1, // Configuration 1
         .iConfiguration = 0,      // No string
         .bmAttributes = 0xc0,     // attributes: self powered, no remote wakeup
-        .bMaxPower = 0x32         // 100ma
+        .bMaxPower = 0xFA         // 100ma
 };
 
 static const unsigned char lang_descriptor[] = {

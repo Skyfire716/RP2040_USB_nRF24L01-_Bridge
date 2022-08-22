@@ -79,22 +79,80 @@ extern "C" void radio_toggleAllPipes (bool isEnabled);
 extern "C" void radio_setRadiation (uint8_t level, rf24_datarate_ec speed);
 
 
-rf24_pa_dbm_ec convertCPADBM2PADBM(rf24_pa_dbm_e level){
-    if(level == CRF24_PA_MIN){
-        return rf24_pa_dbm_ec.CRF24_PA_MIN;
-    }else if (level == CRF24_PA_LOW){
-        return rf24_pa_dbm_ec.CRF24_PA_LOW;
-    }else if(level == CRF24_PA_HIGH){
-        return rf24_pa_dbm_ec.CRF24_PA_HIGH;
-    }else if(level == CRF24_PA_MAX){
-        return rf24_pa_dbm_ec.CRF24_PA_MAX;
-    }else if(level == CRF24_PA_ERROR){
-        return rf24_pa_dbm_ec.CRF24_PA_ERROR;
+rf24_pa_dbm_ec convertPADBM2CPADBM(rf24_pa_dbm_e level){
+    if(level == RF24_PA_MIN){
+        return CRF24_PA_MIN;
+    }else if (level == RF24_PA_LOW){
+        return CRF24_PA_LOW;
+    }else if(level == RF24_PA_HIGH){
+        return CRF24_PA_HIGH;
+    }else if(level == RF24_PA_MAX){
+        return CRF24_PA_MAX;
+    }else if(level == RF24_PA_ERROR){
+        return CRF24_PA_ERROR;
     }
+    return CRF24_PA_ERROR;
 }
 
+rf24_pa_dbm_e convertCPADBM2PADBM(rf24_pa_dbm_ec level){
+    if(level == CRF24_PA_MIN){
+        return RF24_PA_MIN;
+    }else if (level == CRF24_PA_LOW){
+        return RF24_PA_LOW;
+    }else if(level == CRF24_PA_HIGH){
+        return RF24_PA_HIGH;
+    }else if(level == CRF24_PA_MAX){
+        return RF24_PA_MAX;
+    }else if(level == CRF24_PA_ERROR){
+        return RF24_PA_ERROR;
+    }
+    return RF24_PA_ERROR;
+}
 
+rf24_datarate_ec convertDATARATE2DATARATEC(rf24_datarate_e speed){
+    if(speed == RF24_1MBPS){
+        return CRF24_1MBPS;
+    }else if(speed == RF24_2MBPS){
+        return CRF24_2MBPS;
+    }else if(speed == RF24_250KBPS){
+        return CRF24_250KBPS;
+    }
+    return CRF24_1MBPS;
+}
 
+rf24_datarate_e convertDATARATEC2DATARATE(rf24_datarate_ec speed){
+    if(speed == CRF24_1MBPS){
+        return RF24_1MBPS;
+    }else if(speed == CRF24_2MBPS){
+        return RF24_2MBPS;
+    }else if(speed == CRF24_250KBPS){
+        return RF24_250KBPS;
+    }
+    return RF24_1MBPS;
+}
+
+rf24_crclength_ec convertCRC2CCRC(rf24_crclength_e length){
+    if(length == RF24_CRC_DISABLED){
+        return CRF24_CRC_DISABLED;
+    }else if(length == RF24_CRC_8){
+        return CRF24_CRC_8;
+    }else if(length == RF24_CRC_16){
+        return CRF24_CRC_16;
+    }
+    return CRF24_CRC_DISABLED;
+}
+
+rf24_crclength_e convertCCRC2CRC(rf24_crclength_ec length){
+    if(length == CRF24_CRC_DISABLED){
+        return RF24_CRC_DISABLED;
+    }else if(length == CRF24_CRC_8){
+        return RF24_CRC_8;
+    }else if(length == CRF24_CRC_16){
+        return RF24_CRC_16;
+    }
+    return RF24_CRC_DISABLED;
+}
+    
 bool radio_begin()
 {
     return radio.begin();
@@ -325,19 +383,19 @@ uint8_t radio_getARC (void){
 }
 
 bool radio_setDataRate (rf24_datarate_ec speed){
-    return radio.setDataRate(speed);
+    return radio.setDataRate(convertDATARATEC2DATARATE(speed));
 }
 
 rf24_datarate_ec radio_getDataRate (void){
-    return radio.getDataRate();
+    return convertDATARATE2DATARATEC(radio.getDataRate());
 }
 
 void radio_setCRCLength (rf24_crclength_ec length){
-    radio.setCRCLength(length);
+    radio.setCRCLength(convertCCRC2CRC(length));
 }
 
 rf24_crclength_ec radio_getCRCLength (void){
-    return radio.getCRCLength();
+    return convertCRC2CCRC(radio.getCRCLength());
 }
 
 void radio_disableCRC (void){
@@ -349,7 +407,7 @@ void radio_maskIRQ (bool tx_ok, bool tx_fail, bool rx_ready){
 }
 
 void radio_startConstCarrier (rf24_pa_dbm_ec level, uint8_t channel){
-    radio.startConstCarrier(level, channel);
+    radio.startConstCarrier(convertCPADBM2PADBM(level), channel);
 }
 
 void radio_stopConstCarrier (void){
@@ -361,5 +419,5 @@ void radio_toggleAllPipes (bool isEnabled){
 }
 
 void radio_setRadiation (uint8_t level, rf24_datarate_ec speed){
-    radio.setRadiation(level, speed);
+    radio.setRadiation(level, convertDATARATEC2DATARATE(speed));
 }

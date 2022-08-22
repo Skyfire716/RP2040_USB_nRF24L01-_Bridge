@@ -104,6 +104,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "_deps/pico_sdk-src/src/rp2_common/pico_stdio/include"
   "_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/include"
   "_deps/pico_sdk-src/src/rp2_common/hardware_spi/include"
+  "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/../.."
   )
 
 # The set of dependency files which are needed:
@@ -142,8 +143,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj.d"
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
+  "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.c" "nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj.d"
+  "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/RF24interface.cpp" "nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj.d"
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
-  "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.cpp" "nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj.d"
+  "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.cpp" "nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj.d"
+  "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.cpp" "nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj.d"
+  "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.cpp" "nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj.d"
   )
 
 # Targets to which this target links.

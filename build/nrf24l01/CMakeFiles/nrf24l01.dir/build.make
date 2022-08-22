@@ -69,24 +69,38 @@ include nrf24l01/CMakeFiles/nrf24l01.dir/progress.make
 # Include the compile flags for this target's objects.
 include nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 
-nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
-nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.cpp
-nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj"
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj -MF CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj.d -o CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.cpp
+nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
+nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.c
+nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj -MF CMakeFiles/nrf24l01.dir/nrf24l01.c.obj.d -o CMakeFiles/nrf24l01.dir/nrf24l01.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.c
 
-nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nrf24l01.dir/nrf24l01.cpp.i"
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.cpp > CMakeFiles/nrf24l01.dir/nrf24l01.cpp.i
+nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nrf24l01.dir/nrf24l01.c.i"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.c > CMakeFiles/nrf24l01.dir/nrf24l01.c.i
 
-nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nrf24l01.dir/nrf24l01.cpp.s"
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.cpp -o CMakeFiles/nrf24l01.dir/nrf24l01.cpp.s
+nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nrf24l01.dir/nrf24l01.c.s"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.c -o CMakeFiles/nrf24l01.dir/nrf24l01.c.s
+
+nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
+nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/RF24interface.cpp
+nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj -MF CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj.d -o CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/RF24interface.cpp
+
+nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nrf24l01.dir/RF24interface.cpp.i"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/RF24interface.cpp > CMakeFiles/nrf24l01.dir/RF24interface.cpp.i
+
+nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nrf24l01.dir/RF24interface.cpp.s"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/RF24interface.cpp -o CMakeFiles/nrf24l01.dir/RF24interface.cpp.s
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -100,7 +114,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdli
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -114,7 +128,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_g
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -128,7 +142,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -142,7 +156,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platf
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -156,7 +170,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_s
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -169,7 +183,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_i
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: _deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -183,7 +197,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_i
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj: _deps/pico_sdk-src/src/common/pico_sync/sem.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/common/pico_sync/sem.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.i: cmake_force
@@ -197,7 +211,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj: _deps/pico_sdk-src/src/common/pico_sync/lock_core.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -211,7 +225,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.obj: _deps/pico_sdk-src/src/common/pico_time/time.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/common/pico_time/time.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.i: cmake_force
@@ -225,7 +239,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj: _deps/pico_sdk-src/src/common/pico_time/timeout_helper.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -239,7 +253,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -253,7 +267,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_t
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj: _deps/pico_sdk-src/src/common/pico_util/datetime.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/common/pico_util/datetime.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.i: cmake_force
@@ -267,7 +281,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/date
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj: _deps/pico_sdk-src/src/common/pico_util/pheap.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/common/pico_util/pheap.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.i: cmake_force
@@ -281,7 +295,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/phea
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj: _deps/pico_sdk-src/src/common/pico_util/queue.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/common/pico_util/queue.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.i: cmake_force
@@ -295,7 +309,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queu
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj: _deps/pico_sdk-src/src/common/pico_sync/mutex.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/common/pico_sync/mutex.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.i: cmake_force
@@ -309,7 +323,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mute
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj: _deps/pico_sdk-src/src/common/pico_sync/critical_section.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -323,7 +337,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/crit
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -336,7 +350,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_u
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S.obj: _deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S.obj   -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -350,7 +364,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_d
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -364,7 +378,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runti
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -378,7 +392,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -392,7 +406,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_p
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -406,7 +420,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_v
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -420,7 +434,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_w
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -434,7 +448,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_x
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -447,7 +461,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_print
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: _deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -461,7 +475,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bit_o
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -474,7 +488,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootr
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S.obj: _deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S.obj   -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S.i: cmake_force
@@ -487,7 +501,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_divid
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S.obj: _deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S.i: cmake_force
@@ -501,7 +515,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_doubl
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -515,7 +529,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_doubl
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -528,7 +542,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_doubl
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: _deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S.i: cmake_force
@@ -541,7 +555,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_doubl
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: _deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -554,7 +568,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_int64
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S.obj: _deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S.i: cmake_force
@@ -568,7 +582,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -582,7 +596,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -595,7 +609,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: _deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S.i: cmake_force
@@ -609,7 +623,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -622,7 +636,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mallo
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: _deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -635,7 +649,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mem_o
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S.obj: _deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S.i: cmake_force
@@ -649,7 +663,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stand
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj: _deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -663,7 +677,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stand
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -677,7 +691,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stand
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -691,7 +705,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
@@ -705,7 +719,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj: _deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj -MF CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj.d -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.i: cmake_force
@@ -716,9 +730,52 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_s
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.s"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c -o CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.s
 
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.cpp
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj -MF CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj.d -o CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.cpp
+
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.i"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.cpp > CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.i
+
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.s"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.cpp -o CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.s
+
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.cpp
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj -MF CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj.d -o CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.cpp
+
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.i"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.cpp > CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.i
+
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.s"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.cpp -o CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.s
+
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/flags.make
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.cpp
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj: nrf24l01/CMakeFiles/nrf24l01.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj -MF CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj.d -o CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj -c /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.cpp
+
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.i"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.cpp > CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.i
+
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.s"
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.cpp -o CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.s
+
 # Object files for target nrf24l01
 nrf24l01_OBJECTS = \
-"CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj" \
+"CMakeFiles/nrf24l01.dir/nrf24l01.c.obj" \
+"CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj" \
 "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj" \
@@ -764,12 +821,16 @@ nrf24l01_OBJECTS = \
 "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj" \
 "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
-"CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj"
+"CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj" \
+"CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj" \
+"CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj" \
+"CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj"
 
 # External object files for target nrf24l01
 nrf24l01_EXTERNAL_OBJECTS =
 
-nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj
+nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj
+nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj
 nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj
 nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj
 nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj
@@ -816,10 +877,13 @@ nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/sr
 nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj
 nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj
+nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj
+nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj
+nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj
 nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/build.make
 nrf24l01/nrf24l01.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 nrf24l01/nrf24l01.elf: nrf24l01/CMakeFiles/nrf24l01.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable nrf24l01.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking CXX executable nrf24l01.elf"
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nrf24l01.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-objcopy -Oihex /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01/nrf24l01.elf nrf24l01.hex
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01 && /usr/bin/arm-none-eabi-objcopy -Obinary /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01/nrf24l01.elf nrf24l01.bin

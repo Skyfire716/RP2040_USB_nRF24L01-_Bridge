@@ -12,6 +12,8 @@ set(CMAKE_CXX_STANDARD 17)
 # Initialize the SDK
 pico_sdk_init()
 
+include(lib/RF24/CMakeLists.txt)
+
 # Add blink example
 add_subdirectory(blink)
 add_subdirectory(nrf24l01)

@@ -33,21 +33,21 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  14 .debug_line   00000a8c  00000000  00000000  00004784  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_line_str 00000046  00000000  00000000  00005210  2**0
+ 15 .debug_line_str 00000092  00000000  00000000  00005210  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_info   000021ba  00000000  00000000  00005256  2**0
+ 16 .debug_info   000021cf  00000000  00000000  000052a2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_abbrev 00000a56  00000000  00000000  00007410  2**0
+ 17 .debug_abbrev 00000a61  00000000  00000000  00007471  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_aranges 00000108  00000000  00000000  00007e68  2**3
+ 18 .debug_aranges 00000108  00000000  00000000  00007ed8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    00000b73  00000000  00000000  00007f70  2**0
+ 19 .debug_str    00000bc9  00000000  00000000  00007fe0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_loclists 0000030f  00000000  00000000  00008ae3  2**0
+ 20 .debug_loclists 0000030f  00000000  00000000  00008ba9  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_rnglists 00000093  00000000  00000000  00008df2  2**0
+ 21 .debug_rnglists 00000093  00000000  00000000  00008eb8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_frame  000001b8  00000000  00000000  00008e88  2**2
+ 22 .debug_frame  000001b8  00000000  00000000  00008f4c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/blink.elf:     file format elf32-littlearm

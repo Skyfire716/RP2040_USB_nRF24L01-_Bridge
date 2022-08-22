@@ -110,6 +110,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/pico_sdk-src/tools/FindPioasm.cmake"
   "blink/elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake"
   "pico-sdk/src/rp2_common/cyw43_driver/pioasm/tmp/PioasmBuild-mkdirs.cmake"
+  "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/CMakeLists.txt"
+  "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/CMakeLists.txt"
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/CMakeLists.txt"
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/pico_sdk_import.cmake"
   "/usr/share/cmake/Modules/CMakeASMInformation.cmake"

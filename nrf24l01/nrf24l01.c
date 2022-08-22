@@ -102,6 +102,33 @@ void radio_toggleAllPipes (bool isEnabled);
 void radio_setRadiation (uint8_t level, rf24_datarate_ec speed);
 
 
+
+uint8_t address[][6] = { "1Node", "2Node" };
+// It is very helpful to think of an address as a path instead of as
+// an identifying device destination
+ 
+// to use different addresses on a pair of radios, we need a variable to
+// uniquely identify which address this radio will use to transmit
+bool radioNumber = 1;  // 0 uses address[0] to transmit, 1 uses address[1] to transmit
+ 
+// Used to control whether this node is sending or receiving
+bool role = false;  // true = TX role, false = RX role
+ 
+// For this example, we'll be using a payload containing
+// a single float number that will be incremented
+// on every successful transmission
+float payload = 0.0;
+
+bool changeRole = 0;
+char changeRoleTo = ' ';
+#define COMBUFSN 5
+uint8_t comBuf[COMBUFSN][MAXPACKETSIZE];
+int currentComBuf = 0;
+int clearedTillComBuf = 0;
+
+
+
+
 // Function prototypes for our device specific endpoint handlers defined
 // later on
 void ep0_in_handler(uint8_t *buf, uint16_t len);
@@ -117,7 +144,7 @@ static volatile bool configured = false;
 static volatile int blinkCounter = 0;
 
 // Global data buffer for EP0
-static uint8_t ep0_buf[64];
+static uint8_t ep0_buf[MAXPACKETSIZE];
 
 // Struct defining the device configuration
 static struct usb_device_configuration dev_config = {
@@ -150,7 +177,7 @@ static struct usb_device_configuration dev_config = {
                         .endpoint_control = &usb_dpram->ep_ctrl[0].out,
                         .buffer_control = &usb_dpram->ep_buf_ctrl[1].out,
                         // First free EPX buffer
-                        .data_buffer = &usb_dpram->epx_data[0 * 64],
+                        .data_buffer = &usb_dpram->epx_data[0 * MAXPACKETSIZE],
                 },
                 {
                         .descriptor = &ep2_in,
@@ -158,7 +185,7 @@ static struct usb_device_configuration dev_config = {
                         .endpoint_control = &usb_dpram->ep_ctrl[1].in,
                         .buffer_control = &usb_dpram->ep_buf_ctrl[2].in,
                         // Second free EPX buffer
-                        .data_buffer = &usb_dpram->epx_data[1 * 64],
+                        .data_buffer = &usb_dpram->epx_data[1 * MAXPACKETSIZE],
                 }
         }
 };
@@ -314,7 +341,7 @@ static inline bool ep_is_tx(struct usb_endpoint_configuration *ep) {
 void usb_start_transfer(struct usb_endpoint_configuration *ep, uint8_t *buf, uint16_t len) {
     // We are asserting that the length is <= 64 bytes for simplicity of the example.
     // For multi packet transfers see the tinyusb port.
-    assert(len <= 64);
+    assert(len <= MAXPACKETSIZE);
 
     printf("Start transfer of len %d on ep addr 0x%x\n", len, ep->descriptor->bEndpointAddress);
 
@@ -619,19 +646,82 @@ void ep0_out_handler(uint8_t *buf, uint16_t len) {
     ;
 }
 
+void printToUSB(uint8_t *buf, size_t n){
+    while(((currentComBuf + 1) % COMBUFSN) == clearedTillComBuf){
+        tight_loop_contents();
+    }
+    memset(comBuf[currentComBuf], 0, MAXPACKETSIZE);
+    memcpy(comBuf[currentComBuf++], buf, n);
+    currentComBuf %= COMBUFSN;
+}
+
 // Device specific functions
 void ep1_out_handler(uint8_t *buf, uint16_t len) {
     printf("RX %d bytes from host\n", len);
     // Send data back to host
-    blinkCounter = buf[0];
+    if(buf[0] > 0){
+        blinkCounter = buf[0];
+    }
+    if (buf[50] == 1 && changeRoleTo != buf[51]) {
+        // change the role via the serial monitor
+        changeRoleTo = buf[51];
+        changeRole = 1;
+    }
     struct usb_endpoint_configuration *ep = usb_get_endpoint_configuration(EP2_IN_ADDR);
-    usb_start_transfer(ep, buf, len);
+    if(currentComBuf != clearedTillComBuf){
+        usb_start_transfer(ep, comBuf[clearedTillComBuf], MAXPACKETSIZE);
+        clearedTillComBuf++;
+        clearedTillComBuf %= COMBUFSN;
+    }else{
+        usb_start_transfer(ep, buf, len);
+    }
 }
 
 void ep2_in_handler(uint8_t *buf, uint16_t len) {
     printf("Sent %d bytes to host\n", len);
     // Get ready to rx again from host
     usb_start_transfer(usb_get_endpoint_configuration(EP1_OUT_ADDR), NULL, 64);
+}
+
+void floatToStr(float n, uint8_t *buf){
+    int intpart = (int) n;
+    float decpart = n - intpart;
+    float decpart2 = decpart;
+    int i = 0;
+    int j = 0;
+    int pot = 1;
+    while(decpart2 != 0){
+        decpart2 = (decpart2 - (int)decpart2) * 10;
+        j++;
+        pot *= 10;
+    }
+    n *= pot;
+    while(i < 45 && n != 0){
+        if(i == j){
+            buf[i++] = ',';
+        }else{
+            n /= 10;
+            intpart = (int)n;
+            buf[i++] = (uint8_t)(((int)((n - intpart) * 10)) % 10);
+            
+        }
+    }
+}
+
+void uint32_tToStr(uint32_t n, uint8_t *buf){
+    int i = 0;
+    while(i < 8 && n != 0){
+        buf[i++] = (uint8_t)(n % 10);
+        n /= 10;
+    }
+}
+
+void uint_8ToStr(uint8_t n, uint8_t *buf){
+    int i = 0;
+    while(i < 8 && n != 0){
+        buf[i++] = (uint8_t)(n % 10);
+        n /= 10;
+    }
 }
 
 int main(void) {
@@ -646,25 +736,29 @@ int main(void) {
         tight_loop_contents();
     }
 
-    if(radio_begin()){
-        for(int i = 0; i < 3; i++){
-            gpio_put(LED_PIN, 1);
-            sleep_ms(250);
-            gpio_put(LED_PIN, 0);
-            sleep_ms(250);
+    if(!radio_begin()){
+        printToUSB("No Connection to RF24\n", 22);
+        while(1){
+            for(int i = 0; i < 9; i++){
+                gpio_put(LED_PIN, 1);
+                sleep_ms((i >= 3 && i < 6) ? 500 : 250);
+                gpio_put(LED_PIN, 0);
+                sleep_ms((i >= 3 && i < 6) ? 500 : 250);
+            }
         }
     }
-    sleep_ms(1000);
-    if(radio_isChipConnected()){
-        for(int i = 0; i < 4; i++){
-            gpio_put(LED_PIN, 1);
-            sleep_ms(250);
-            gpio_put(LED_PIN, 0);
-            sleep_ms(250);
-        }
+    radio_setPALevel(CRF24_PA_LOW);
+    radio_setPayloadSize(sizeof(payload));
+    radio_openWritingPipe(address[radioNumber]);
+    radio_openReadingPipe(1, address[!radioNumber]);
+    if (role) {
+        radio_stopListening();  // put radio in TX mode
+    } else {
+        radio_startListening();  // put radio in RX mode
     }
     // Get ready to rx from host
     usb_start_transfer(usb_get_endpoint_configuration(EP1_OUT_ADDR), NULL, 64);
+    printToUSB("*** PRESS 'T' to begin transmitting to the other node\n", 54);
     // Everything is interrupt driven so just loop here
     while (1) {
         tight_loop_contents();
@@ -677,6 +771,70 @@ int main(void) {
             }
             blinkCounter = 0;
         }
+        if(changeRole){
+            changeRole = 0;
+            char c = changeRoleTo;
+            if (c == 'T' && !role) {
+                // Become the TX node
+            
+                role = true;
+                printToUSB("*** CHANGING TO TRANSMIT ROLE -- PRESS 'R' TO SWITCH BACK\n", 58);
+                radio_stopListening();
+        
+            } else if (c == 'R' && role) {
+                // Become the RX node
+            
+                role = false;
+                printToUSB("*** CHANGING TO RECEIVE ROLE -- PRESS 'T' TO SWITCH BACK\n", 57);
+                radio_startListening();
+            }
+        }
+        if (role) {
+            // This device is a TX node
+        
+            uint32_t start_timer = to_ms_since_boot(get_absolute_time());                // start the timer
+            bool report = radio_write(&payload, sizeof(float));  // transmit & save the report
+            uint32_t end_timer = to_ms_since_boot(get_absolute_time());                  // end the timer
+        
+            if (report) {
+                printToUSB("Transmission successful!\n", 25);  // payload was delivered
+                printToUSB("Time to transmit = \n", 20);
+                uint8_t buf[50];
+                uint32_tToStr((end_timer - start_timer), buf);
+                printToUSB(buf, 8);  // print the timer result
+                printToUSB(" us. Sent: \n", 12);
+                memset(buf, 0, 50);
+                floatToStr(payload, buf);
+                printToUSB(buf, 50);  // print payload sent
+                payload += 0.01;          // increment float payload
+            } else {
+                printToUSB("Transmission failed or timed out\n", 33);  // payload was not delivered
+            }
+        
+            // to make this example readable in the serial monitor
+            sleep_ms(1000);  // slow transmissions down by 1 second
+        
+        } else {
+            // This device is a RX node
+        
+            uint8_t pipe;
+            if (radio_availablePN(&pipe)) {              // is there a payload? get the pipe number that recieved it
+                uint8_t bytes = radio_getPayloadSize();  // get the size of the payload
+                radio_read(&payload, bytes);             // fetch payload from FIFO
+                printToUSB("Received\n", 9);
+                uint8_t buf[50];
+                uint_8ToStr(bytes, buf);
+                printToUSB(buf, 8);  // print the size of the payload
+                printToUSB(" bytes on pipe\n", 15);
+                memset(buf, 0, 50);
+                uint_8ToStr(pipe, buf);
+                printToUSB(buf, 50);  // print the pipe number
+                printToUSB(": \n", 3);
+                memset(buf, 0, 50);
+                floatToStr(payload, buf);
+                printToUSB(buf, 50);  // print the payload's value
+            }
+        }  // role
     }
     return 0;
 }

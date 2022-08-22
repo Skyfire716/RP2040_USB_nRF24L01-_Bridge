@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj"
+  "CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj.d"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj.d"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj"
@@ -80,8 +82,14 @@ file(REMOVE_RECURSE
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
-  "CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj"
-  "CMakeFiles/nrf24l01.dir/nrf24l01.cpp.obj.d"
+  "CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj"
+  "CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj.d"
+  "CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj"
+  "CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj.d"
+  "CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj"
+  "CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj.d"
+  "CMakeFiles/nrf24l01.dir/nrf24l01.c.obj"
+  "CMakeFiles/nrf24l01.dir/nrf24l01.c.obj.d"
   "nrf24l01.elf"
   "nrf24l01.pdb"
 )
