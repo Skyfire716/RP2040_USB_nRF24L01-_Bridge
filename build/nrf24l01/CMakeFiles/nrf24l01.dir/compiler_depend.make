@@ -1253,7 +1253,66 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mallo
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
   _deps/pico_sdk-src/src/common/pico_base/include/pico/types.h \
   _deps/pico_sdk-src/src/common/pico_base/include/pico/error.h \
-  _deps/pico_sdk-src/src/rp2_common/pico_malloc/include/pico/malloc.h
+  _deps/pico_sdk-src/src/rp2_common/pico_malloc/include/pico/malloc.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/mutex.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/lock_core.h \
+  _deps/pico_sdk-src/src/common/pico_time/include/pico/time.h \
+  _deps/pico_sdk-src/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  _deps/pico_sdk-src/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  _deps/pico_sdk-src/src/rp2_common/hardware_sync/include/hardware/sync.h
+
+nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c \
+  _deps/pico_sdk-src/src/rp2_common/pico_multicore/include/pico/multicore.h \
+  _deps/pico_sdk-src/src/common/pico_base/include/pico/types.h \
+  _deps/pico_sdk-src/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
+  /usr/arm-none-eabi/include/assert.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/newlib.h \
+  /usr/arm-none-eabi/include/_newlib_version.h \
+  /usr/arm-none-eabi/include/sys/config.h \
+  /usr/arm-none-eabi/include/machine/ieeefp.h \
+  /usr/arm-none-eabi/include/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
+  /usr/arm-none-eabi/include/stdint.h \
+  /usr/arm-none-eabi/include/machine/_default_types.h \
+  /usr/arm-none-eabi/include/sys/_intsup.h \
+  /usr/arm-none-eabi/include/sys/_stdint.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/sync.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/sem.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/lock_core.h \
+  _deps/pico_sdk-src/src/common/pico_base/include/pico.h \
+  _deps/pico_sdk-src/src/common/pico_base/include/pico/types.h \
+  generated/pico_base/pico/version.h \
+  _deps/pico_sdk-src/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  _deps/pico_sdk-src/src/boards/include/boards/pico.h \
+  _deps/pico_sdk-src/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  _deps/pico_sdk-src/src/rp2_common/pico_platform/include/pico/platform.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/arm-none-eabi/include/sys/cdefs.h \
+  _deps/pico_sdk-src/src/common/pico_base/include/pico/error.h \
+  _deps/pico_sdk-src/src/common/pico_time/include/pico/time.h \
+  _deps/pico_sdk-src/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  _deps/pico_sdk-src/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  _deps/pico_sdk-src/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/mutex.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/critical_section.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  _deps/pico_sdk-src/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/scb.h \
+  _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/psm.h \
+  _deps/pico_sdk-src/src/rp2_common/hardware_claim/include/hardware/claim.h
 
 nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj: _deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c \
   _deps/pico_sdk-src/src/common/pico_base/include/pico.h \
@@ -1977,6 +2036,14 @@ nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj: /home/jonas/Nextcloud/TUMHiWiSt
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
   _deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/sync.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/sem.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/lock_core.h \
+  _deps/pico_sdk-src/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/mutex.h \
+  _deps/pico_sdk-src/src/common/pico_sync/include/pico/critical_section.h \
+  _deps/pico_sdk-src/src/common/pico_util/include/pico/util/queue.h \
+  _deps/pico_sdk-src/src/rp2_common/pico_multicore/include/pico/multicore.h \
   /usr/arm-none-eabi/include/string.h \
   /usr/arm-none-eabi/include/sys/_locale.h \
   /usr/arm-none-eabi/include/strings.h \
@@ -2018,6 +2085,8 @@ _deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c:
 _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
 
 _deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c:
+
+_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c:
 
 _deps/pico_sdk-src/src/common/pico_binary_info/include/pico/binary_info/code.h:
 
@@ -2228,6 +2297,8 @@ _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/resets.h
 _deps/pico_sdk-src/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h:
 
 _deps/pico_sdk-src/src/common/pico_stdlib/include/pico/stdlib.h:
+
+_deps/pico_sdk-src/src/rp2_common/pico_multicore/include/pico/multicore.h:
 
 /usr/lib/gcc/arm-none-eabi/12.2.0/include-fixed/syslimits.h:
 

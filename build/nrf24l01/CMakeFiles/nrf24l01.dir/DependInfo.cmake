@@ -37,6 +37,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_MALLOC=1"
   "LIB_PICO_MEM_OPS=1"
   "LIB_PICO_MEM_OPS_PICO=1"
+  "LIB_PICO_MULTICORE=1"
   "LIB_PICO_PLATFORM=1"
   "LIB_PICO_PRINTF=1"
   "LIB_PICO_PRINTF_PICO=1"
@@ -103,6 +104,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "_deps/pico_sdk-src/src/common/pico_binary_info/include"
   "_deps/pico_sdk-src/src/rp2_common/pico_stdio/include"
   "_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/include"
+  "_deps/pico_sdk-src/src/rp2_common/pico_multicore/include"
   "_deps/pico_sdk-src/src/rp2_common/hardware_spi/include"
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/../.."
   )
@@ -136,6 +138,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj.d"
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj.d"
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj.d"
+  "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.obj.d"
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj.d"
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj.d"
   "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj" "gcc" "nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj.d"

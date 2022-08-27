@@ -8,6 +8,9 @@
 
 // Pico
 #include "pico/stdlib.h"
+#include "pico/sync.h"
+#include "pico/util/queue.h"
+#include "pico/multicore.h"
 
 // For memcpy
 #include <string.h>
@@ -30,8 +33,38 @@
 #define usb_hw_set hw_set_alias(usb_hw)
 #define usb_hw_clear hw_clear_alias(usb_hw)
 
-
+#define USB_IN_QUEUE_LENGTH 8
+#define USB_OUT_QUEUE_LENGTH 16
 #define LED_PIN PICO_DEFAULT_LED_PIN
+
+typedef struct
+{
+    uint8_t address[6];
+    rf24_pa_dbm_ec db_level;
+    rf24_datarate_ec data_rate;
+    rf24_crclength_ec crc_length;
+    bool connected;
+    bool dynamicPayloads;
+    bool ackPayloads;
+} rf24_config_queue_entry_t;
+
+typedef struct{
+    uint8_t data[32];
+} rf24_data_queue_entry_t;
+
+critical_section_t cs_rf_ctx;
+critical_section_t cs_rf_crx;
+critical_section_t cs_rf_tx;
+critical_section_t cs_rf_rx;
+
+queue_t rf24_config_tx_queue;
+queue_t rf24_config_rx_queue;
+queue_t rf24_tx_queue;
+queue_t rf24_rx_queue;
+queue_t usb_out;
+queue_t usb_in;
+
+bool working_on_usb_out_queue = 0;
 
 bool radio_begin(); 
 bool radio_begini(uint16_t _cepin, uint16_t _cspin);
@@ -130,7 +163,7 @@ int clearedTillComBuf = 0;
 
 
 // Function prototypes for our device specific endpoint handlers defined
-// later on
+// later onqueue_add_blocking
 void ep0_in_handler(uint8_t *buf, uint16_t len);
 void ep0_out_handler(uint8_t *buf, uint16_t len);
 void ep1_out_handler(uint8_t *buf, uint16_t len);
@@ -647,27 +680,73 @@ void ep0_out_handler(uint8_t *buf, uint16_t len) {
 }
 
 void printToUSB(uint8_t *buf, size_t n){
-    while(((currentComBuf + 1) % COMBUFSN) == clearedTillComBuf){
+    while(queue_is_full(&usb_out)){
         tight_loop_contents();
     }
-    memset(comBuf[currentComBuf], 0, MAXPACKETSIZE);
-    memcpy(comBuf[currentComBuf++], buf, n);
-    currentComBuf %= COMBUFSN;
+    uint8_t outBuf[MAXPACKETSIZE];
+    memset(outBuf, 0, MAXPACKETSIZE);
+    working_on_usb_out_queue = 1;
+    if(n > MAXPACKETSIZE){
+        for(uint8_t i = 0; i < n / MAXPACKETSIZE; i++){
+            memcpy(outBuf, &buf[i * MAXPACKETSIZE], i * MAXPACKETSIZE * sizeof(uint8_t));
+            queue_add_blocking(&usb_out, outBuf);
+        }
+        memcpy(outBuf, &buf[(n / MAXPACKETSIZE) * MAXPACKETSIZE], (n % MAXPACKETSIZE) * sizeof(uint8_t));
+        queue_add_blocking(&usb_out, outBuf);
+    }else{
+        memcpy(outBuf, buf, n);
+        queue_add_blocking(&usb_out, outBuf);
+    }
+    working_on_usb_out_queue = 0;
 }
 
 // Device specific functions
 void ep1_out_handler(uint8_t *buf, uint16_t len) {
     printf("RX %d bytes from host\n", len);
     // Send data back to host
+    /*
+    //Add this functionality to the command structure
     if(buf[0] > 0){
         blinkCounter = buf[0];
     }
+    */
+    struct usb_endpoint_configuration *ep = usb_get_endpoint_configuration(EP2_IN_ADDR);
+    if(queue_is_full(&usb_in)){
+        uint8_t queueFullBuf[MAXPACKETSIZE];
+        queueFullBuf[0] = 'F';
+        queueFullBuf[1] = 'U';
+        queueFullBuf[2] = 'L';
+        queueFullBuf[3] = 'L';
+        memcpy(buf, queueFullBuf, len);
+        usb_start_transfer(ep, buf, len);
+    }else{
+        queue_add_blocking(&usb_in, buf);
+        if(!queue_is_empty(&usb_out)){
+            if(!(queue_get_level(&usb_out) <= 1 && working_on_usb_out_queue)){
+                queue_remove_blocking(&usb_out, buf);
+                usb_start_transfer(ep, buf, len);
+            }else{
+                goto SEND_ACK;
+            }
+        }else{
+            SEND_ACK:
+            uint8_t ackBuf[MAXPACKETSIZE];
+            ackBuf[0] = 'A';
+            ackBuf[1] = 'C';
+            ackBuf[2] = 'K';
+            memcpy(buf, ackBuf, len);
+            usb_start_transfer(ep, buf, len);
+        }
+    }
+    /*
     if (buf[50] == 1 && changeRoleTo != buf[51]) {
         // change the role via the serial monitor
         changeRoleTo = buf[51];
         changeRole = 1;
     }
-    struct usb_endpoint_configuration *ep = usb_get_endpoint_configuration(EP2_IN_ADDR);
+    */
+    
+    /*
     if(currentComBuf != clearedTillComBuf){
         usb_start_transfer(ep, comBuf[clearedTillComBuf], MAXPACKETSIZE);
         clearedTillComBuf++;
@@ -675,6 +754,7 @@ void ep1_out_handler(uint8_t *buf, uint16_t len) {
     }else{
         usb_start_transfer(ep, buf, len);
     }
+    */
 }
 
 void ep2_in_handler(uint8_t *buf, uint16_t len) {
@@ -724,11 +804,61 @@ void uint_8ToStr(uint8_t n, uint8_t *buf){
     }
 }
 
+void core1_RF24_runner(){
+    //Communicate with Core0 that Core1 is up and Running
+    while(1){
+        tight_loop_contents();
+        //Do RF24 Loop Stuff here
+    }
+}
+
+bool compare_arrays_till(uint8_t *buf, uint8_t *expected, uint8_t n){
+    bool equal = 1;
+    for(uint8_t i = 0; i < n; i++){
+        if(buf[i] != expected[i]){
+            return 0;
+        }
+    }
+    return equal;
+}
+
+void handle_pc_commands(uint8_t *command){
+    uint8_t BLINK[5] = "BLINK";
+    uint8_t GETTIME[7] = "GETTIME";
+    uint8_t FLUSHIN[7] = "FLUSHIN";
+    if(compare_arrays_till(command, BLINK, 5)){
+        blinkCounter = command[5];
+    }else if(compare_arrays_till(command, GETTIME, 7)){
+        //uint32_t to_ms_since_boot(get_absolute_time());
+        uint8_t buf[MAXPACKETSIZE];
+        uint32_tToStr(to_ms_since_boot(get_absolute_time()), buf);
+        printToUSB(buf, MAXPACKETSIZE);
+    }else if(compare_arrays_till(command, FLUSHIN, 7)){
+        uint8_t buf[MAXPACKETSIZE];
+        for(uint8_t i = 0; i < USB_IN_QUEUE_LENGTH + 5; i++){
+            if(!queue_is_full(&usb_in)){
+                uint32_tToStr(to_ms_since_boot(get_absolute_time()), buf);
+                queue_add_blocking(&usb_in, buf);
+            }
+        }
+    }else{
+        printToUSB("UNKNOWN COMMAND", 15);
+    }
+}
+
 int main(void) {
     stdio_init_all();
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
+    critical_section_init(&cs_rf_crx);
+    critical_section_init(&cs_rf_ctx);
+    critical_section_init(&cs_rf_rx);
+    critical_section_init(&cs_rf_tx);
+    queue_init(&usb_out, MAXPACKETSIZE * sizeof(uint8_t), USB_OUT_QUEUE_LENGTH);
+    queue_init(&usb_in, MAXPACKETSIZE * sizeof(uint8_t), USB_IN_QUEUE_LENGTH);
+    multicore_launch_core1(core1_RF24_runner);
     printf("USB Device Low-Level hardware example\n");
+    printToUSB("USB Device Low-Level hardware example\n", 38);
     usb_device_init();
     
     // Wait until configured
@@ -736,6 +866,7 @@ int main(void) {
         tight_loop_contents();
     }
 
+    /*
     if(!radio_begin()){
         printToUSB("No Connection to RF24\n", 22);
         while(1){
@@ -756,9 +887,10 @@ int main(void) {
     } else {
         radio_startListening();  // put radio in RX mode
     }
+    */
     // Get ready to rx from host
     usb_start_transfer(usb_get_endpoint_configuration(EP1_OUT_ADDR), NULL, 64);
-    printToUSB("*** PRESS 'T' to begin transmitting to the other node\n", 54);
+    //printToUSB("*** PRESS 'T' to begin transmitting to the other node\n", 54);
     // Everything is interrupt driven so just loop here
     while (1) {
         tight_loop_contents();
@@ -771,6 +903,15 @@ int main(void) {
             }
             blinkCounter = 0;
         }
+        if(!queue_is_empty(&usb_in)){
+            uint8_t command[MAXPACKETSIZE];
+            queue_remove_blocking(&usb_in, command);
+            //Reply to Command
+            handle_pc_commands(command);
+        }
+        
+        
+        /*
         if(changeRole){
             changeRole = 0;
             char c = changeRoleTo;
@@ -835,6 +976,7 @@ int main(void) {
                 printToUSB(buf, 50);  // print the payload's value
             }
         }  // role
+        */
     }
     return 0;
 }

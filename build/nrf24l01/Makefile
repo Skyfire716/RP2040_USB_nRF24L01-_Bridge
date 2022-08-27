@@ -882,6 +882,30 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
+__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.obj
+
+# target to build an object file
+__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.obj:
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.obj
+
+__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.i: __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.i
+
+# target to preprocess a source file
+__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.i:
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.i
+
+__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.s: __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.s
+
+# target to generate assembly for a file
+__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.s:
+	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.s
+
 __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.obj
 
@@ -1281,6 +1305,9 @@ help:
 	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.i"
 	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.s"
 	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
+	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.obj"
+	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.i"
+	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.s"
 	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.obj"
 	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.i"
 	@echo "... __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.s"

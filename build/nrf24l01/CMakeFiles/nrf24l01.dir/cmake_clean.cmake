@@ -65,6 +65,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj.d"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+  "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.obj"
+  "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_multicore/multicore.c.obj.d"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj.d"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj"
