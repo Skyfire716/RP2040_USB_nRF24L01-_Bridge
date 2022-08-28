@@ -8,6 +8,7 @@
 
 // Pico
 #include "pico/stdlib.h"
+#include "hardware/spi.h"
 
 // For memcpy
 #include <string.h>
@@ -24,13 +25,16 @@
 #include "hardware/resets.h"
 
 // Device descriptors
-#include "dev_lowlevel.h"
+#include "nrf24l01.h"
 
 #define usb_hw_set hw_set_alias(usb_hw)
 #define usb_hw_clear hw_clear_alias(usb_hw)
 
-
-#define LED_PIN PICO_DEFAULT_LED_PIN
+#define RF24_SPI_SPEED 10000000
+#define RF24_SPI_BYTE_SIZE 8
+#define RF24_SPI_ENDIAN    SPI_MSB_FIRST
+#define RF24_SPI_CPHA      SPI_CPHA_0
+#define RF24_SPI_CPOL      SPI_CPOL_0
 
 
 // Function prototypes for our device specific endpoint handlers defined
@@ -47,6 +51,9 @@ static volatile bool configured = false;
 
 // Global data buffer for EP0
 static uint8_t ep0_buf[64];
+
+#define CE_PIN  20
+#define CSN_PIN 17
 
 // Struct defining the device configuration
 static struct usb_device_configuration dev_config = {
@@ -551,6 +558,27 @@ void ep0_out_handler(uint8_t *buf, uint16_t len) {
 // Device specific functions
 void ep1_out_handler(uint8_t *buf, uint16_t len) {
     printf("RX %d bytes from host\n", len);
+    
+    //SPI Communication
+    
+    //BeginTransaction
+    spi_init(spi0, RF24_SPI_SPEED);
+    spi_set_format(spi0, RF24_SPI_BYTE_SIZE, RF24_SPI_CPOL, RF24_SPI_CPHA, RF24_SPI_ENDIAN);
+    
+    //Transfern
+    //spi_write_blocking(spi0, buf, len);
+    
+    //Transfernb
+    //spi_write_read_blocking(spi0, tbuf, rbuf, len);
+    
+    //Transfer
+    uint8_t recv = 0;
+    //spi_write_read_blocking(spi0, &tx_, &recv, 1);
+    //return recv;
+    
+    //EndTransaction
+    spi_deinit(spi0);
+    
     // Send data back to host
     struct usb_endpoint_configuration *ep = usb_get_endpoint_configuration(EP2_IN_ADDR);
     usb_start_transfer(ep, buf, len);
@@ -564,8 +592,9 @@ void ep2_in_handler(uint8_t *buf, uint16_t len) {
 
 int main(void) {
     stdio_init_all();
-    gpio_init(LED_PIN);
-    gpio_set_dir(LED_PIN, GPIO_OUT);
+    gpio_set_function(PICO_DEFAULT_SPI_SCK_PIN, GPIO_FUNC_SPI);
+    gpio_set_function(PICO_DEFAULT_SPI_TX_PIN, GPIO_FUNC_SPI);
+    gpio_set_function(PICO_DEFAULT_SPI_RX_PIN, GPIO_FUNC_SPI);
     printf("USB Device Low-Level hardware example\n");
     usb_device_init();
     

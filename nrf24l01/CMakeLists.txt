@@ -1,6 +1,5 @@
 add_executable(nrf24l01
         nrf24l01.c
-        RF24interface.cpp
         )
 
 # pull in common dependencies

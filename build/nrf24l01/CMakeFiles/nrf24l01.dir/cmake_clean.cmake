@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj"
-  "CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj.d"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj.d"
   "CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj"

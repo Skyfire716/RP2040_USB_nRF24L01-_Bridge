@@ -130,30 +130,6 @@ nrf24l01/fast:
 	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/build
 .PHONY : nrf24l01/fast
 
-RF24interface.obj: RF24interface.cpp.obj
-.PHONY : RF24interface.obj
-
-# target to build an object file
-RF24interface.cpp.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.obj
-.PHONY : RF24interface.cpp.obj
-
-RF24interface.i: RF24interface.cpp.i
-.PHONY : RF24interface.i
-
-# target to preprocess a source file
-RF24interface.cpp.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.i
-.PHONY : RF24interface.cpp.i
-
-RF24interface.s: RF24interface.cpp.s
-.PHONY : RF24interface.s
-
-# target to generate assembly for a file
-RF24interface.cpp.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/RF24interface.cpp.s
-.PHONY : RF24interface.cpp.s
-
 __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.obj: __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.obj
 
@@ -1187,9 +1163,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... nrf24l01"
-	@echo "... RF24interface.obj"
-	@echo "... RF24interface.i"
-	@echo "... RF24interface.s"
 	@echo "... __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.obj"
 	@echo "... __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.i"
 	@echo "... __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.s"
