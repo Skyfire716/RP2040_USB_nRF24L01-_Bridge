@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/boards/include/boards/pico.h
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/boards/include/boards/pico.h
 
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/boot_stage2/compile_time_choice.S
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/boot_stage2/compile_time_choice.S
 boot_stage2/config.h
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/boot_stage2/boot_stage2/config.h
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/boot_stage2/boot_stage2/config.h
 
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
 
 _deps/pico_sdk-src/src/common/pico_base/include/pico/config.h
 pico/config_autogen.h
@@ -23,8 +23,8 @@ pico/config.h
 _deps/pico_sdk-src/src/rp2_common/boot_stage2/include/boot_stage2/pico/config.h
 
 generated/pico_base/pico/config_autogen.h
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/boards/include/boards/pico.h
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/boards/include/boards/pico.h
 -
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
 -
 

@@ -1519,7 +1519,7 @@ blink/CMakeFiles/blink.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdl
   _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
 
-blink/CMakeFiles/blink.dir/blink.c.obj: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/blink/blink.c \
+blink/CMakeFiles/blink.dir/blink.c.obj: /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/blink/blink.c \
   _deps/pico_sdk-src/src/common/pico_stdlib/include/pico/stdlib.h \
   _deps/pico_sdk-src/src/common/pico_base/include/pico.h \
   _deps/pico_sdk-src/src/common/pico_base/include/pico/types.h \
@@ -1572,8 +1572,6 @@ blink/CMakeFiles/blink.dir/blink.c.obj: /home/jonas/Nextcloud/TUMHiWiStelle/Tenn
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
   _deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
 
-
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/blink/blink.c:
 
 _deps/pico_sdk-src/src/common/pico_stdlib/include/pico/stdlib.h:
 
@@ -1820,6 +1818,8 @@ _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
 /usr/arm-none-eabi/include/machine/stdlib.h:
 
 _deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c:
+
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/blink/blink.c:
 
 /usr/arm-none-eabi/include/alloca.h:
 

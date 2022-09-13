@@ -1565,11 +1565,11 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdli
   _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
 
-nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.cpp \
-  /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/nRF24L01.h \
-  /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24_config.h \
-  /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/RF24_arch_config.h \
-  /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.h \
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj: /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.cpp \
+  /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/nRF24L01.h \
+  /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24_config.h \
+  /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/RF24_arch_config.h \
+  /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.h \
   /usr/arm-none-eabi/include/stdio.h \
   /usr/arm-none-eabi/include/_ansi.h \
   /usr/arm-none-eabi/include/newlib.h \
@@ -1648,15 +1648,15 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj: /home/jonas/Nextcloud
   _deps/pico_sdk-src/src/rp2_common/hardware_spi/include/hardware/spi.h \
   _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
-  /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.h \
+  /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.h \
   /usr/arm-none-eabi/include/string.h \
   /usr/arm-none-eabi/include/sys/_locale.h \
   /usr/arm-none-eabi/include/strings.h \
   /usr/arm-none-eabi/include/sys/string.h \
-  /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.h
+  /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.h
 
-nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.cpp \
-  /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.h \
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj: /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.cpp \
+  /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.h \
   /usr/arm-none-eabi/include/stdio.h \
   /usr/arm-none-eabi/include/_ansi.h \
   /usr/arm-none-eabi/include/newlib.h \
@@ -1733,8 +1733,8 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj: /home/jon
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
   _deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
 
-nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.cpp \
-  /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.h \
+nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj: /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.cpp \
+  /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.h \
   /usr/arm-none-eabi/include/stdio.h \
   /usr/arm-none-eabi/include/_ansi.h \
   /usr/arm-none-eabi/include/newlib.h \
@@ -1814,7 +1814,7 @@ nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj: /home/jona
   _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/spi.h
 
-nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.c \
+nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj: /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.c \
   /usr/arm-none-eabi/include/stdio.h \
   /usr/arm-none-eabi/include/_ansi.h \
   /usr/arm-none-eabi/include/newlib.h \
@@ -1885,6 +1885,10 @@ nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj: /home/jonas/Nextcloud/TUMHiWiSt
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
   _deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+  _deps/pico_sdk-src/src/common/pico_binary_info/include/pico/binary_info.h \
+  _deps/pico_sdk-src/src/common/pico_binary_info/include/pico/binary_info/defs.h \
+  _deps/pico_sdk-src/src/common/pico_binary_info/include/pico/binary_info/structure.h \
+  _deps/pico_sdk-src/src/common/pico_binary_info/include/pico/binary_info/code.h \
   _deps/pico_sdk-src/src/rp2_common/hardware_spi/include/hardware/spi.h \
   _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
@@ -1892,32 +1896,34 @@ nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj: /home/jonas/Nextcloud/TUMHiWiSt
   /usr/arm-none-eabi/include/sys/_locale.h \
   /usr/arm-none-eabi/include/strings.h \
   /usr/arm-none-eabi/include/sys/string.h \
-  /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/usb_common.h \
+  /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/usb_common.h \
   _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/usb.h \
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/usb.h \
   _deps/pico_sdk-src/src/rp2_common/hardware_resets/include/hardware/resets.h \
   _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
   _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
-  /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.h
+  /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.h
 
-
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.h:
 
 _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/usb.h:
 
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.cpp:
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.c:
+
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.cpp:
 
 /usr/arm-none-eabi/include/c++/12.2.0/cassert:
 
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.h:
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.h:
 
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24_config.h:
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.cpp:
 
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/nRF24L01.h:
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/RF24_arch_config.h:
 
 _deps/pico_sdk-src/src/common/pico_stdlib/include/pico/stdlib.h:
 
 _deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c:
+
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.cpp:
 
 _deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c:
 
@@ -1931,7 +1937,11 @@ _deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c:
 
 /usr/arm-none-eabi/include/c++/12.2.0/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h:
 
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.h:
+
 _deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp:
+
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/usb_common.h:
 
 _deps/pico_sdk-src/src/common/pico_binary_info/include/pico/binary_info/defs.h:
 
@@ -1963,8 +1973,6 @@ _deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c:
 
 _deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c:
 
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/RF24_arch_config.h:
-
 _deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c:
 
 _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
@@ -1982,6 +1990,8 @@ _deps/pico_sdk-src/src/rp2_common/pico_bootrom/include/pico/bootrom.h:
 /usr/arm-none-eabi/include/machine/ieeefp.h:
 
 /usr/arm-none-eabi/include/machine/_default_types.h:
+
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24_config.h:
 
 _deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c:
 
@@ -2040,8 +2050,6 @@ _deps/pico_sdk-src/src/common/pico_base/include/pico/config.h:
 /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdarg.h:
 
 /usr/arm-none-eabi/include/_newlib_version.h:
-
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/usb_common.h:
 
 /usr/arm-none-eabi/include/sys/_locale.h:
 
@@ -2103,8 +2111,6 @@ _deps/pico_sdk-src/src/rp2_common/hardware_sync/include/hardware/sync.h:
 
 _deps/pico_sdk-src/src/common/pico_sync/include/pico/lock_core.h:
 
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/spi.cpp:
-
 /usr/arm-none-eabi/include/c++/12.2.0/cstdlib:
 
 _deps/pico_sdk-src/src/rp2040/hardware_structs/include/hardware/structs/xosc.h:
@@ -2127,8 +2133,6 @@ _deps/pico_sdk-src/src/common/pico_sync/include/pico/critical_section.h:
 
 /usr/lib/gcc/arm-none-eabi/12.2.0/include-fixed/syslimits.h:
 
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.c:
-
 /usr/arm-none-eabi/include/sys/config.h:
 
 /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h:
@@ -2141,6 +2145,8 @@ _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/platform_defs.h:
 
 generated/pico_base/pico/version.h:
 
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.h:
+
 /usr/arm-none-eabi/include/c++/12.2.0/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h:
 
 /usr/arm-none-eabi/include/limits.h:
@@ -2150,6 +2156,8 @@ _deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c:
 /usr/arm-none-eabi/include/sys/_timeval.h:
 
 _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/pll.h:
+
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/nrf24l01/nrf24l01.h:
 
 _deps/pico_sdk-src/src/rp2_common/hardware_xosc/include/hardware/xosc.h:
 
@@ -2181,11 +2189,7 @@ _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
 
 /usr/arm-none-eabi/include/alloca.h:
 
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.cpp:
-
 _deps/pico_sdk-src/src/common/pico_util/include/pico/util/datetime.h:
-
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/RF24.h:
 
 _deps/pico_sdk-src/src/common/pico_sync/include/pico/sync.h:
 
@@ -2209,6 +2213,8 @@ _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h:
 
 /usr/arm-none-eabi/include/strings.h:
 
+/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/nRF24L01.h:
+
 /usr/arm-none-eabi/include/sys/sched.h:
 
 /usr/arm-none-eabi/include/sys/string.h:
@@ -2226,8 +2232,6 @@ _deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c:
 _deps/pico_sdk-src/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
 
 _deps/pico_sdk-src/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
-
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/lib/RF24/utility/rp2/gpio.h:
 
 generated/pico_base/pico/config_autogen.h:
 

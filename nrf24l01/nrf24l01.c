@@ -8,6 +8,7 @@
 
 // Pico
 #include "pico/stdlib.h"
+#include "pico/binary_info.h"
 #include "hardware/spi.h"
 
 // For memcpy
@@ -32,14 +33,15 @@
 
 #define RF24_SPI_SPEED 10000000
 #define RF24_SPI_BYTE_SIZE 8
+//#define RF24_SPI_ENDIAN    SPI_LSB_FIRST
 #define RF24_SPI_ENDIAN    SPI_MSB_FIRST
 #define RF24_SPI_CPHA      SPI_CPHA_0
 #define RF24_SPI_CPOL      SPI_CPOL_0
 
-#define BYTEARRAYTRANSFER 0x00
-#define BYTEARRAYTRANSFERSINLGE 0x01
-#define SETCEPIN 0x02
-#define SETCSNPIN 0x03
+#define BYTEARRAYTRANSFER 0xAA
+#define BYTEARRAYTRANSFERSINLGE 0xBB
+#define SETCEPIN 0xCC
+#define SETCSNPIN 0xDD
 
 
 // Function prototypes for our device specific endpoint handlers defined
@@ -59,6 +61,7 @@ static uint8_t ep0_buf[64];
 
 #define CE_PIN  20
 #define CSN_PIN 17
+//#define CSN_PIN PICO_DEFAULT_LED_PIN
 
 // Struct defining the device configuration
 static struct usb_device_configuration dev_config = {
@@ -564,38 +567,49 @@ void ep0_out_handler(uint8_t *buf, uint16_t len) {
 void ep1_out_handler(uint8_t *buf, uint16_t len) {
     printf("RX %d bytes from host\n", len);
     
-    //SPI Communication
-    
-    //BeginTransaction
-    spi_init(spi0, RF24_SPI_SPEED);
-    spi_set_format(spi0, RF24_SPI_BYTE_SIZE, RF24_SPI_CPOL, RF24_SPI_CPHA, RF24_SPI_ENDIAN);
-    
-    //Transfern
-    //spi_write_blocking(spi0, buf, len);
-    
-    uint8_t outBuf[33];
-    if(len == 64 && buf[63] == BYTEARRAYTRANSFER){
-        spi_write_read_blocking(spi0, buf, outBuf, 1);
-    }else if(len == 64 && buf[63] == BYTEARRAYTRANSFERSINLGE){
-        spi_write_read_blocking(spi0, buf, outBuf, 33);
-    }else if(len == 64 && buf[63] == SETCEPIN){
+    if(len == 64 && buf[63] == SETCEPIN){
         gpio_put(CE_PIN, buf[0]);
-    }else if(len == 64 && buf[63] == SETCSNPIN){
+    }else if (len == 64 && buf[63] == SETCSNPIN){
         gpio_put(CSN_PIN, buf[0]);
+    }else{
+        //SPI Communication
+    
+        //BeginTransaction
+        spi_init(spi0, RF24_SPI_SPEED);
+
+        spi_set_format(spi0, RF24_SPI_BYTE_SIZE, RF24_SPI_CPOL, RF24_SPI_CPHA, RF24_SPI_ENDIAN);
+        
+        gpio_put(CSN_PIN, 0);
+        //Transfern
+        //spi_write_blocking(spi0, buf, len);
+        
+        uint8_t outBuf[33]; 
+        memset(outBuf, 0, 33 );
+        int dataWritten = 0;
+        if(len == 64 && buf[63] == BYTEARRAYTRANSFER){
+            dataWritten = spi_write_read_blocking(spi0, buf, outBuf, buf[62]);
+        }else if(len == 64 && buf[63] == BYTEARRAYTRANSFERSINLGE){
+            dataWritten = spi_write_read_blocking(spi0, buf, outBuf, 1);
+        }
+    
+        
+        //Transfernb
+        //spi_write_read_blocking(spi0, tbuf, rbuf, len);
+        
+        //Transfer
+        //uint8_t recv = 0;
+        //spi_write_read_blocking(spi0, &tx_, &recv, 1);
+        //return recv;
+        
+        uint speed = spi_get_baudrate(spi0);
+        memcpy(&buf[56], &speed, 4);
+        buf[60] = spi_is_writable(spi0) | (spi_is_readable(spi0) << 4);
+        //EndTransaction
+        gpio_put(CSN_PIN, 1);
+        spi_deinit(spi0);
+        memcpy(buf, outBuf, 33);
+        buf[61] = (uint8_t) dataWritten;
     }
-    
-    
-    //Transfernb
-    //spi_write_read_blocking(spi0, tbuf, rbuf, len);
-    
-    //Transfer
-    //uint8_t recv = 0;
-    //spi_write_read_blocking(spi0, &tx_, &recv, 1);
-    //return recv;
-    
-    //EndTransaction
-    spi_deinit(spi0);
-    memcpy(buf, outBuf, 33);
     // Send data back to host
     struct usb_endpoint_configuration *ep = usb_get_endpoint_configuration(EP2_IN_ADDR);
     usb_start_transfer(ep, buf, len);
@@ -609,13 +623,15 @@ void ep2_in_handler(uint8_t *buf, uint16_t len) {
 
 int main(void) {
     stdio_init_all();
-    gpio_set_function(PICO_DEFAULT_SPI_SCK_PIN, GPIO_FUNC_SPI);
-    gpio_set_function(PICO_DEFAULT_SPI_TX_PIN, GPIO_FUNC_SPI);
-    gpio_set_function(PICO_DEFAULT_SPI_RX_PIN, GPIO_FUNC_SPI);
     gpio_init(CE_PIN);
     gpio_init(CSN_PIN);
     gpio_set_dir(CE_PIN, GPIO_OUT);
     gpio_set_dir(CSN_PIN, GPIO_OUT);
+    gpio_set_function(PICO_DEFAULT_SPI_SCK_PIN, GPIO_FUNC_SPI);
+    gpio_set_function(PICO_DEFAULT_SPI_TX_PIN, GPIO_FUNC_SPI);
+    gpio_set_function(PICO_DEFAULT_SPI_RX_PIN, GPIO_FUNC_SPI);
+    //gpio_set_function(PICO_DEFAULT_SPI_CSN_PIN, GPIO_FUNC_SPI);
+    //bi_decl(bi_4pins_with_func(PICO_DEFAULT_SPI_RX_PIN, PICO_DEFAULT_SPI_TX_PIN, PICO_DEFAULT_SPI_SCK_PIN, PICO_DEFAULT_SPI_CSN_PIN, GPIO_FUNC_SPI));
     printf("USB Device Low-Level hardware example\n");
     usb_device_init();
     

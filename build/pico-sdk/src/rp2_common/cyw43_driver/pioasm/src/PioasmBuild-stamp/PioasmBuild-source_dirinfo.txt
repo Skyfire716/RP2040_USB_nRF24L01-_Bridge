@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/tools/pioasm
+source_dir=/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/tools/pioasm
 work_dir=
 

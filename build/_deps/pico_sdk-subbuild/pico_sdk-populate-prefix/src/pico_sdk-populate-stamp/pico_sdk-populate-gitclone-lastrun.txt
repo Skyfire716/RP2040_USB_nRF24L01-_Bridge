@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=/usr/bin/cmake;-P;/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-subbuild/pico_sdk-populate-prefix/tmp/pico_sdk-populate-gitclone.cmake
-source_dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src
-work_dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps
+command=/usr/bin/cmake;-P;/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-subbuild/pico_sdk-populate-prefix/tmp/pico_sdk-populate-gitclone.cmake
+source_dir=/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src
+work_dir=/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps
 repository=https://github.com/raspberrypi/pico-sdk
 remote=origin
 init_submodules=TRUE

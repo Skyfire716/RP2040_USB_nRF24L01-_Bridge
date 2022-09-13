@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge
+CMAKE_SOURCE_DIR = /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build
+CMAKE_BINARY_DIR = /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build
 
 # Utility rule file for ELF2UF2Build.
 
@@ -76,46 +76,46 @@ blink/CMakeFiles/ELF2UF2Build-complete: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF
 blink/CMakeFiles/ELF2UF2Build-complete: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 blink/CMakeFiles/ELF2UF2Build-complete: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
 blink/CMakeFiles/ELF2UF2Build-complete: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'ELF2UF2Build'"
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E make_directory /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/CMakeFiles
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/CMakeFiles/ELF2UF2Build-complete
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'ELF2UF2Build'"
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E make_directory /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/CMakeFiles
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/CMakeFiles/ELF2UF2Build-complete
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'ELF2UF2Build'"
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2 && $(MAKE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'ELF2UF2Build'"
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2 && $(MAKE)
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: blink/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'ELF2UF2Build'"
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2 && /usr/bin/cmake "-GUnix Makefiles" /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/tools/elf2uf2
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2 && /usr/bin/cmake -E touch /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'ELF2UF2Build'"
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2 && /usr/bin/cmake "-GUnix Makefiles" /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src/tools/elf2uf2
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2 && /usr/bin/cmake -E touch /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-source_dirinfo.txt
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ELF2UF2Build'"
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E echo_append
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ELF2UF2Build'"
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E echo_append
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'ELF2UF2Build'"
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2 && /usr/bin/cmake -E echo_append
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2 && /usr/bin/cmake -E touch /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'ELF2UF2Build'"
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2 && /usr/bin/cmake -E echo_append
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/elf2uf2 && /usr/bin/cmake -E touch /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'ELF2UF2Build'"
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -Dcfgdir= -P /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'ELF2UF2Build'"
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -Dcfgdir= -P /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'ELF2UF2Build'"
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E echo_append
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'ELF2UF2Build'"
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E echo_append
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'ELF2UF2Build'"
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E echo_append
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'ELF2UF2Build'"
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E echo_append
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && /usr/bin/cmake -E touch /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
 
 ELF2UF2Build: blink/CMakeFiles/ELF2UF2Build
 ELF2UF2Build: blink/CMakeFiles/ELF2UF2Build-complete
@@ -134,10 +134,10 @@ blink/CMakeFiles/ELF2UF2Build.dir/build: ELF2UF2Build
 .PHONY : blink/CMakeFiles/ELF2UF2Build.dir/build
 
 blink/CMakeFiles/ELF2UF2Build.dir/clean:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink && $(CMAKE_COMMAND) -P CMakeFiles/ELF2UF2Build.dir/cmake_clean.cmake
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink && $(CMAKE_COMMAND) -P CMakeFiles/ELF2UF2Build.dir/cmake_clean.cmake
 .PHONY : blink/CMakeFiles/ELF2UF2Build.dir/clean
 
 blink/CMakeFiles/ELF2UF2Build.dir/depend:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/blink /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/blink /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : blink/CMakeFiles/ELF2UF2Build.dir/depend
 

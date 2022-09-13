@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge
+CMAKE_SOURCE_DIR = /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build
+CMAKE_BINARY_DIR = /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01//CMakeFiles/progress.marks
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nrf24l01/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles 0
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/nrf24l01//CMakeFiles/progress.marks
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nrf24l01/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nrf24l01/clean
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nrf24l01/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nrf24l01/preinstall
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nrf24l01/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nrf24l01/preinstall
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nrf24l01/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 nrf24l01/CMakeFiles/nrf24l01.dir/rule:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nrf24l01/CMakeFiles/nrf24l01.dir/rule
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nrf24l01/CMakeFiles/nrf24l01.dir/rule
 .PHONY : nrf24l01/CMakeFiles/nrf24l01.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ nrf24l01: nrf24l01/CMakeFiles/nrf24l01.dir/rule
 
 # fast build rule for target.
 nrf24l01/fast:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/build
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/build
 .PHONY : nrf24l01/fast
 
 __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.obj: __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj
@@ -135,7 +135,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.obj: __/_deps/pico_s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.obj
 
 __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.i: __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.i
@@ -143,7 +143,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.i: __/_deps/pico_sdk
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.i
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.i
 
 __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.s: __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.s
@@ -151,7 +151,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.s: __/_deps/pico_sdk
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.s
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/critical_section.c.s
 
 __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.obj: __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj
@@ -159,7 +159,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.obj: __/_deps/pico_sdk-src/
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.obj
 
 __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.i: __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.i
@@ -167,7 +167,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.i: __/_deps/pico_sdk-src/sr
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.i
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.i
 
 __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.s: __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.s
@@ -175,7 +175,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.s: __/_deps/pico_sdk-src/sr
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.s
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/lock_core.c.s
 
 __/_deps/pico_sdk-src/src/common/pico_sync/mutex.obj: __/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj
@@ -183,7 +183,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/mutex.obj: __/_deps/pico_sdk-src/src/
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.obj
 
 __/_deps/pico_sdk-src/src/common/pico_sync/mutex.i: __/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.i
@@ -191,7 +191,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/mutex.i: __/_deps/pico_sdk-src/src/co
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.i
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.i
 
 __/_deps/pico_sdk-src/src/common/pico_sync/mutex.s: __/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.s
@@ -199,7 +199,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/mutex.s: __/_deps/pico_sdk-src/src/co
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.s
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/mutex.c.s
 
 __/_deps/pico_sdk-src/src/common/pico_sync/sem.obj: __/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj
@@ -207,7 +207,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/sem.obj: __/_deps/pico_sdk-src/src/co
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/sem.c.obj
 
 __/_deps/pico_sdk-src/src/common/pico_sync/sem.i: __/_deps/pico_sdk-src/src/common/pico_sync/sem.c.i
@@ -215,7 +215,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/sem.i: __/_deps/pico_sdk-src/src/comm
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/common/pico_sync/sem.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.i
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/sem.c.i
 
 __/_deps/pico_sdk-src/src/common/pico_sync/sem.s: __/_deps/pico_sdk-src/src/common/pico_sync/sem.c.s
@@ -223,7 +223,7 @@ __/_deps/pico_sdk-src/src/common/pico_sync/sem.s: __/_deps/pico_sdk-src/src/comm
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/common/pico_sync/sem.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_sync/sem.c.s
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_sync/sem.c.s
 
 __/_deps/pico_sdk-src/src/common/pico_time/time.obj: __/_deps/pico_sdk-src/src/common/pico_time/time.c.obj
@@ -231,7 +231,7 @@ __/_deps/pico_sdk-src/src/common/pico_time/time.obj: __/_deps/pico_sdk-src/src/c
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/common/pico_time/time.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_time/time.c.obj
 
 __/_deps/pico_sdk-src/src/common/pico_time/time.i: __/_deps/pico_sdk-src/src/common/pico_time/time.c.i
@@ -239,7 +239,7 @@ __/_deps/pico_sdk-src/src/common/pico_time/time.i: __/_deps/pico_sdk-src/src/com
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/common/pico_time/time.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.i
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_time/time.c.i
 
 __/_deps/pico_sdk-src/src/common/pico_time/time.s: __/_deps/pico_sdk-src/src/common/pico_time/time.c.s
@@ -247,7 +247,7 @@ __/_deps/pico_sdk-src/src/common/pico_time/time.s: __/_deps/pico_sdk-src/src/com
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/common/pico_time/time.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/time.c.s
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_time/time.c.s
 
 __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.obj: __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj
@@ -255,7 +255,7 @@ __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.obj: __/_deps/pico_sdk
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.obj
 
 __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.i: __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.i
@@ -263,7 +263,7 @@ __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.i: __/_deps/pico_sdk-s
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.i
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.i
 
 __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.s: __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.s
@@ -271,7 +271,7 @@ __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.s: __/_deps/pico_sdk-s
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.s
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_time/timeout_helper.c.s
 
 __/_deps/pico_sdk-src/src/common/pico_util/datetime.obj: __/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj
@@ -279,7 +279,7 @@ __/_deps/pico_sdk-src/src/common/pico_util/datetime.obj: __/_deps/pico_sdk-src/s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_util/datetime.c.obj
 
 __/_deps/pico_sdk-src/src/common/pico_util/datetime.i: __/_deps/pico_sdk-src/src/common/pico_util/datetime.c.i
@@ -287,7 +287,7 @@ __/_deps/pico_sdk-src/src/common/pico_util/datetime.i: __/_deps/pico_sdk-src/src
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/common/pico_util/datetime.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.i
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_util/datetime.c.i
 
 __/_deps/pico_sdk-src/src/common/pico_util/datetime.s: __/_deps/pico_sdk-src/src/common/pico_util/datetime.c.s
@@ -295,7 +295,7 @@ __/_deps/pico_sdk-src/src/common/pico_util/datetime.s: __/_deps/pico_sdk-src/src
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/common/pico_util/datetime.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/datetime.c.s
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_util/datetime.c.s
 
 __/_deps/pico_sdk-src/src/common/pico_util/pheap.obj: __/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj
@@ -303,7 +303,7 @@ __/_deps/pico_sdk-src/src/common/pico_util/pheap.obj: __/_deps/pico_sdk-src/src/
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_util/pheap.c.obj
 
 __/_deps/pico_sdk-src/src/common/pico_util/pheap.i: __/_deps/pico_sdk-src/src/common/pico_util/pheap.c.i
@@ -311,7 +311,7 @@ __/_deps/pico_sdk-src/src/common/pico_util/pheap.i: __/_deps/pico_sdk-src/src/co
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/common/pico_util/pheap.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.i
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_util/pheap.c.i
 
 __/_deps/pico_sdk-src/src/common/pico_util/pheap.s: __/_deps/pico_sdk-src/src/common/pico_util/pheap.c.s
@@ -319,7 +319,7 @@ __/_deps/pico_sdk-src/src/common/pico_util/pheap.s: __/_deps/pico_sdk-src/src/co
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/common/pico_util/pheap.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/pheap.c.s
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_util/pheap.c.s
 
 __/_deps/pico_sdk-src/src/common/pico_util/queue.obj: __/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj
@@ -327,7 +327,7 @@ __/_deps/pico_sdk-src/src/common/pico_util/queue.obj: __/_deps/pico_sdk-src/src/
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_util/queue.c.obj
 
 __/_deps/pico_sdk-src/src/common/pico_util/queue.i: __/_deps/pico_sdk-src/src/common/pico_util/queue.c.i
@@ -335,7 +335,7 @@ __/_deps/pico_sdk-src/src/common/pico_util/queue.i: __/_deps/pico_sdk-src/src/co
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/common/pico_util/queue.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.i
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_util/queue.c.i
 
 __/_deps/pico_sdk-src/src/common/pico_util/queue.s: __/_deps/pico_sdk-src/src/common/pico_util/queue.c.s
@@ -343,7 +343,7 @@ __/_deps/pico_sdk-src/src/common/pico_util/queue.s: __/_deps/pico_sdk-src/src/co
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/common/pico_util/queue.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/common/pico_util/queue.c.s
 .PHONY : __/_deps/pico_sdk-src/src/common/pico_util/queue.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj
@@ -351,7 +351,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.obj: __/_deps/pico_sdk
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.i
@@ -359,7 +359,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.i: __/_deps/pico_sdk-s
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.s
@@ -367,7 +367,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.s: __/_deps/pico_sdk-s
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_claim/claim.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -375,7 +375,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.obj: __/_deps/pico_s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.i
@@ -383,7 +383,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.i: __/_deps/pico_sdk
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.s
@@ -391,7 +391,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.s: __/_deps/pico_sdk
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_clocks/clocks.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S.obj
@@ -399,7 +399,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.obj: __/_deps/pico
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_divider/divider.S.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -407,7 +407,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.obj: __/_deps/pico_sdk-s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.i
@@ -415,7 +415,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.i: __/_deps/pico_sdk-src
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.s
@@ -423,7 +423,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.s: __/_deps/pico_sdk-src
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_gpio/gpio.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj
@@ -431,7 +431,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.obj: __/_deps/pico_sdk-src
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.i
@@ -439,7 +439,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.i: __/_deps/pico_sdk-src/s
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.s
@@ -447,7 +447,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.s: __/_deps/pico_sdk-src/s
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -455,7 +455,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.obj: __/_dep
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj
@@ -463,7 +463,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.obj: __/_deps/pico_sdk-src
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.i
@@ -471,7 +471,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.i: __/_deps/pico_sdk-src/s
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.s
@@ -479,7 +479,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.s: __/_deps/pico_sdk-src/s
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_pll/pll.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj
@@ -487,7 +487,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.obj: __/_deps/pico_sdk-src
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.i
@@ -495,7 +495,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.i: __/_deps/pico_sdk-src/s
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.s
@@ -503,7 +503,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.s: __/_deps/pico_sdk-src/s
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_spi/spi.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj
@@ -511,7 +511,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.obj: __/_deps/pico_sdk-s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.i
@@ -519,7 +519,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.i: __/_deps/pico_sdk-src
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.s
@@ -527,7 +527,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.s: __/_deps/pico_sdk-src
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_sync/sync.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj
@@ -535,7 +535,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.obj: __/_deps/pico_sdk
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.i
@@ -543,7 +543,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.i: __/_deps/pico_sdk-s
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.s
@@ -551,7 +551,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.s: __/_deps/pico_sdk-s
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_timer/timer.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj
@@ -559,7 +559,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.obj: __/_deps/pico_sdk-s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.i
@@ -567,7 +567,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.i: __/_deps/pico_sdk-src
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.s
@@ -575,7 +575,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.s: __/_deps/pico_sdk-src
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_uart/uart.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -583,7 +583,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.obj: __/_deps/pico_sdk-s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.i
@@ -591,7 +591,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.i: __/_deps/pico_sdk-src
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.s
@@ -599,7 +599,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.s: __/_deps/pico_sdk-src
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_vreg/vreg.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -607,7 +607,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.obj: __/_deps/pi
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -615,7 +615,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.i: __/_deps/pico
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -623,7 +623,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.s: __/_deps/pico
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.obj: __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -631,7 +631,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.obj: __/_deps/pico_sdk-s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.i: __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.i
@@ -639,7 +639,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.i: __/_deps/pico_sdk-src
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.s: __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.s
@@ -647,7 +647,7 @@ __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.s: __/_deps/pico_sdk-src
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/hardware_xosc/xosc.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -655,7 +655,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: __/_deps/pi
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -663,7 +663,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.obj: __/_deps/pico_sdk
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.i: __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -671,7 +671,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.i: __/_deps/pico_sdk-s
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.s: __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -679,7 +679,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.s: __/_deps/pico_sdk-s
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_bootrom/bootrom.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S.obj
@@ -687,7 +687,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.obj: __/_deps/pico_sdk
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_divider/divider.S.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -695,7 +695,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.obj: __/_deps/pico
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_aeabi.S.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -703,7 +703,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.obj: __/_deps/p
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.i: __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.i
@@ -711,7 +711,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.i: __/_deps/pic
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.s: __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.s
@@ -719,7 +719,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.s: __/_deps/pic
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_init_rom.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj
@@ -727,7 +727,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.obj: __/_deps/pico_
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.i: __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.i
@@ -735,7 +735,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.i: __/_deps/pico_sd
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.s: __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.s
@@ -743,7 +743,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.s: __/_deps/pico_sd
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_math.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -751,7 +751,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.obj: __/_dep
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -759,7 +759,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.obj: __/_deps/pico_s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_aeabi.S.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -767,7 +767,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.obj: __/_deps/pic
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.i: __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.i
@@ -775,7 +775,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.i: __/_deps/pico_
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.s: __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.s
@@ -783,7 +783,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.s: __/_deps/pico_
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_init_rom.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj
@@ -791,7 +791,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.obj: __/_deps/pico_sd
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.i: __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.i
@@ -799,7 +799,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.i: __/_deps/pico_sdk-
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.s: __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.s
@@ -807,7 +807,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.s: __/_deps/pico_sdk-
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_math.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -815,7 +815,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.obj: __/_deps/
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -823,7 +823,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: __
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -831,7 +831,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.obj: __/_deps/pico_
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.i: __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -839,7 +839,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.i: __/_deps/pico_sd
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.s: __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -847,7 +847,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.s: __/_deps/pico_sd
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -855,7 +855,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: __/_deps/pi
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj
@@ -863,7 +863,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.obj: __/_deps/pico_s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.i: __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.i
@@ -871,7 +871,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.i: __/_deps/pico_sdk
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.s: __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.s
@@ -879,7 +879,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.s: __/_deps/pico_sdk
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_platform/platform.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj
@@ -887,7 +887,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.obj: __/_deps/pico_sdk-s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.i: __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.i
@@ -895,7 +895,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.i: __/_deps/pico_sdk-src
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.s: __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.s
@@ -903,7 +903,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.s: __/_deps/pico_sdk-src
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_printf/printf.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj
@@ -911,7 +911,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.obj: __/_deps/pico_sdk
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.i: __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.i
@@ -919,7 +919,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.i: __/_deps/pico_sdk-s
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.s: __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.s
@@ -927,7 +927,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.s: __/_deps/pico_sdk-s
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -935,7 +935,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.obj: __/_dep
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.i: __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -943,7 +943,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.i: __/_deps/
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.s: __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -951,7 +951,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.s: __/_deps/
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/binary_info.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -959,7 +959,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.obj: __/_deps/pico_
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/crt0.S.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -967,7 +967,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.obj: __/_deps
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.i: __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -975,7 +975,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.i: __/_deps/p
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.s: __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -983,7 +983,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.s: __/_deps/p
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj
@@ -991,7 +991,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.obj: __/_deps/pico_sdk-src
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.i: __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.i
@@ -999,7 +999,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.i: __/_deps/pico_sdk-src/s
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.s: __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.s
@@ -1007,7 +1007,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.s: __/_deps/pico_sdk-src/s
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_stdio/stdio.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1015,7 +1015,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.obj: __/_deps/pi
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.i: __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1023,7 +1023,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.i: __/_deps/pico
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.s: __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1031,7 +1031,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.s: __/_deps/pico
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.obj: __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1039,7 +1039,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.obj: __/_deps/pico_sdk-s
 
 # target to build an object file
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.i: __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1047,7 +1047,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.i: __/_deps/pico_sdk-src
 
 # target to preprocess a source file
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.i
 
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.s: __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1055,7 +1055,7 @@ __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.s: __/_deps/pico_sdk-src
 
 # target to generate assembly for a file
 __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : __/_deps/pico_sdk-src/src/rp2_common/pico_stdlib/stdlib.c.s
 
 __/lib/RF24/RF24.obj: __/lib/RF24/RF24.cpp.obj
@@ -1063,7 +1063,7 @@ __/lib/RF24/RF24.obj: __/lib/RF24/RF24.cpp.obj
 
 # target to build an object file
 __/lib/RF24/RF24.cpp.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.obj
 .PHONY : __/lib/RF24/RF24.cpp.obj
 
 __/lib/RF24/RF24.i: __/lib/RF24/RF24.cpp.i
@@ -1071,7 +1071,7 @@ __/lib/RF24/RF24.i: __/lib/RF24/RF24.cpp.i
 
 # target to preprocess a source file
 __/lib/RF24/RF24.cpp.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.i
 .PHONY : __/lib/RF24/RF24.cpp.i
 
 __/lib/RF24/RF24.s: __/lib/RF24/RF24.cpp.s
@@ -1079,7 +1079,7 @@ __/lib/RF24/RF24.s: __/lib/RF24/RF24.cpp.s
 
 # target to generate assembly for a file
 __/lib/RF24/RF24.cpp.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/RF24.cpp.s
 .PHONY : __/lib/RF24/RF24.cpp.s
 
 __/lib/RF24/utility/rp2/gpio.obj: __/lib/RF24/utility/rp2/gpio.cpp.obj
@@ -1087,7 +1087,7 @@ __/lib/RF24/utility/rp2/gpio.obj: __/lib/RF24/utility/rp2/gpio.cpp.obj
 
 # target to build an object file
 __/lib/RF24/utility/rp2/gpio.cpp.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.obj
 .PHONY : __/lib/RF24/utility/rp2/gpio.cpp.obj
 
 __/lib/RF24/utility/rp2/gpio.i: __/lib/RF24/utility/rp2/gpio.cpp.i
@@ -1095,7 +1095,7 @@ __/lib/RF24/utility/rp2/gpio.i: __/lib/RF24/utility/rp2/gpio.cpp.i
 
 # target to preprocess a source file
 __/lib/RF24/utility/rp2/gpio.cpp.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.i
 .PHONY : __/lib/RF24/utility/rp2/gpio.cpp.i
 
 __/lib/RF24/utility/rp2/gpio.s: __/lib/RF24/utility/rp2/gpio.cpp.s
@@ -1103,7 +1103,7 @@ __/lib/RF24/utility/rp2/gpio.s: __/lib/RF24/utility/rp2/gpio.cpp.s
 
 # target to generate assembly for a file
 __/lib/RF24/utility/rp2/gpio.cpp.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/gpio.cpp.s
 .PHONY : __/lib/RF24/utility/rp2/gpio.cpp.s
 
 __/lib/RF24/utility/rp2/spi.obj: __/lib/RF24/utility/rp2/spi.cpp.obj
@@ -1111,7 +1111,7 @@ __/lib/RF24/utility/rp2/spi.obj: __/lib/RF24/utility/rp2/spi.cpp.obj
 
 # target to build an object file
 __/lib/RF24/utility/rp2/spi.cpp.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.obj
 .PHONY : __/lib/RF24/utility/rp2/spi.cpp.obj
 
 __/lib/RF24/utility/rp2/spi.i: __/lib/RF24/utility/rp2/spi.cpp.i
@@ -1119,7 +1119,7 @@ __/lib/RF24/utility/rp2/spi.i: __/lib/RF24/utility/rp2/spi.cpp.i
 
 # target to preprocess a source file
 __/lib/RF24/utility/rp2/spi.cpp.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.i
 .PHONY : __/lib/RF24/utility/rp2/spi.cpp.i
 
 __/lib/RF24/utility/rp2/spi.s: __/lib/RF24/utility/rp2/spi.cpp.s
@@ -1127,7 +1127,7 @@ __/lib/RF24/utility/rp2/spi.s: __/lib/RF24/utility/rp2/spi.cpp.s
 
 # target to generate assembly for a file
 __/lib/RF24/utility/rp2/spi.cpp.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/__/lib/RF24/utility/rp2/spi.cpp.s
 .PHONY : __/lib/RF24/utility/rp2/spi.cpp.s
 
 nrf24l01.obj: nrf24l01.c.obj
@@ -1135,7 +1135,7 @@ nrf24l01.obj: nrf24l01.c.obj
 
 # target to build an object file
 nrf24l01.c.obj:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.obj
 .PHONY : nrf24l01.c.obj
 
 nrf24l01.i: nrf24l01.c.i
@@ -1143,7 +1143,7 @@ nrf24l01.i: nrf24l01.c.i
 
 # target to preprocess a source file
 nrf24l01.c.i:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.i
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.i
 .PHONY : nrf24l01.c.i
 
 nrf24l01.s: nrf24l01.c.s
@@ -1151,7 +1151,7 @@ nrf24l01.s: nrf24l01.c.s
 
 # target to generate assembly for a file
 nrf24l01.c.s:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.s
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(MAKE) $(MAKESILENT) -f nrf24l01/CMakeFiles/nrf24l01.dir/build.make nrf24l01/CMakeFiles/nrf24l01.dir/nrf24l01.c.s
 .PHONY : nrf24l01.c.s
 
 # Help Target
@@ -1302,6 +1302,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -13,17 +13,17 @@ project(pico_sdk-populate NONE)
 # Pass through things we've already detected in the main project to avoid
 # paying the cost of redetecting them again in ExternalProject_Add()
 set(GIT_EXECUTABLE [==[/usr/bin/git]==])
-set(GIT_VERSION_STRING [==[2.37.2]==])
+set(GIT_VERSION_STRING [==[2.37.3]==])
 set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
-  [==[/usr/bin/git;2.37.2]==]
+  [==[/usr/bin/git;2.37.3]==]
 )
 
 
 include(ExternalProject)
 ExternalProject_Add(pico_sdk-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/raspberrypi/pico-sdk" "GIT_TAG" "master" "GIT_SUBMODULES_RECURSE" "FALSE"
-                    SOURCE_DIR          "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src"
-                    BINARY_DIR          "/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-build"
+                    SOURCE_DIR          "/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-src"
+                    BINARY_DIR          "/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/_deps/pico_sdk-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

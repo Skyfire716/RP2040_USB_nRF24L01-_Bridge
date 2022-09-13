@@ -1,4 +1,4 @@
-# Install script for directory: /home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/nrf24l01
+# Install script for directory: /home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/nrf24l01
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
