@@ -1,5 +1,5 @@
 
-/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/blink.elf:     file format elf32-littlearm
+/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/blink.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -50,7 +50,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
  22 .debug_frame  000001b8  00000000  00000000  00008f4c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
-/home/jonas/Tennisschlaeger/RP2040_USB_nRF24L01-_Bridge/build/blink/blink.elf:     file format elf32-littlearm
+/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/blink/blink.elf:     file format elf32-littlearm
 
 
 Disassembly of section .boot2:
