@@ -9,6 +9,7 @@
 // Pico
 #include "pico/stdlib.h"
 #include "pico/binary_info.h"
+#include "pico/bootrom.h"
 #include "hardware/spi.h"
 
 // For memcpy
@@ -42,6 +43,7 @@
 #define BYTEARRAYTRANSFERSINLGE 0xBB
 #define SETCEPIN 0xCC
 #define SETCSNPIN 0xDD
+#define USBRESET 0xEE
 
 
 // Function prototypes for our device specific endpoint handlers defined
@@ -571,6 +573,8 @@ void ep1_out_handler(uint8_t *buf, uint16_t len) {
         gpio_put(CE_PIN, buf[0]);
     }else if (len == 64 && buf[63] == SETCSNPIN){
         gpio_put(CSN_PIN, buf[0]);
+    }else if (len == 64 && buf[63] == USBRESET){
+        reset_usb_boot(0, 0);
     }else{
         //SPI Communication
     

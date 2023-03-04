@@ -1,3 +1,0 @@
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/pioasm/CMakeFiles/pioasm.dir
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/pioasm/CMakeFiles/edit_cache.dir
-/home/jonas/Nextcloud/TUMHiWiStelle/TennisSchläger/RP2040_USB_nRF24L01-_Bridge/build/pioasm/CMakeFiles/rebuild_cache.dir
